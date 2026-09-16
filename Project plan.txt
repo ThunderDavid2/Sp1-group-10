@@ -1,0 +1,10 @@
+This is the project plan: Here we can write meeting notes and plans for how the game should look.
+The point of this document is to help us keep track of our project in a place where we can easily work and keep notes
+
+Meeting 1:
+Agenda
+- Decide which project to build out of
+- Setup Github
+- Plan meeting times for the project
+- (If time allows) Decide what we want to do
+
