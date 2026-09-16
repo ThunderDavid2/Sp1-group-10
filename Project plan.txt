@@ -3,8 +3,8 @@ The point of this document is to help us keep track of our project in a place wh
 
 Meeting 1:
 Agenda
-- Decide which project to build out of
+- Decide which project to build out of - Tildas project
 - Setup Github
 - Plan meeting times for the project
-- (If time allows) Decide what we want to do
+- (If time allows) Decide what we want to do - Fokusera på movement och komplicera banor med bossar som trevliga breaks
 
