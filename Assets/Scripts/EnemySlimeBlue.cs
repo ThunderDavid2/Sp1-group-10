@@ -1,0 +1,86 @@
+using UnityEngine;
+
+public class EnemySlimeBlue : MonoBehaviour
+{
+    [SerializeField] private float moveSpeed = 0.5f;
+    [SerializeField] private float bounciness = 100f;
+    [SerializeField] private float knockbackForce = 500f;
+    [SerializeField] private float upwardsForce = 500f;
+    [SerializeField] private int damageGiven = 1;
+
+    [SerializeField] private float slimeHeight;
+    private SpriteRenderer rend;
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        rend = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if(moveSpeed < 0)
+        {
+            rend.flipX = true;
+        }
+        else
+        {
+            rend.flipX = false;
+        }
+        transform.Translate(new Vector2(moveSpeed, 0) * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("EnemyBlock") || other.gameObject.CompareTag("Enemy"))
+        {
+            moveSpeed = -moveSpeed;
+        }
+        if(other.gameObject.CompareTag("Player"))
+        {
+            if (other.transform.transform.position.y > transform.position.y + slimeHeight)
+            {
+                return;
+            }
+        }
+        other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageGiven);
+
+        if(other.transform.position.x > transform.position.x)
+        {
+            other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(knockbackForce, upwardsForce);
+        }
+        else
+        {
+            other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(-knockbackForce, upwardsForce);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Rigidbody2D rgbd = other.attachedRigidbody;
+            if(rgbd != null)
+            {
+                rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0);
+                rgbd.AddForce(new Vector2(0, bounciness));
+                anim.SetTrigger("Death");
+                GetComponent<EnemyAttacks>().enabled = false;
+                GetComponent<EnemySlimeBlue>().enabled = false;
+                damageGiven = 0;
+                Invoke(nameof(OnDeath), 1f);
+            }
+        }
+    }
+
+    private void OnDeath()
+    {
+        Destroy(gameObject);
+        
+    }
+
+
+
+
+}
