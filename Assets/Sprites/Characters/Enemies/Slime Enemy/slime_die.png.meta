@@ -312,10 +312,10 @@ TextureImporter:
       name: slime_die_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 432
-        width: 80
-        height: 72
+        x: 24
+        y: 456
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: slime_die_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 432
-        width: 80
-        height: 72
+        x: 104
+        y: 456
+        width: 19
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: slime_die_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 432
-        width: 80
-        height: 72
+        x: 182
+        y: 456
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: slime_die_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 432
-        width: 80
-        height: 72
+        x: 260
+        y: 456
+        width: 27
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +400,10 @@ TextureImporter:
       name: slime_die_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 432
-        width: 80
-        height: 72
+        x: 338
+        y: 456
+        width: 31
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,10 +422,10 @@ TextureImporter:
       name: slime_die_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 432
-        width: 80
-        height: 72
+        x: 418
+        y: 456
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +444,10 @@ TextureImporter:
       name: slime_die_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 432
-        width: 80
-        height: 72
+        x: 497
+        y: 456
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,10 +466,10 @@ TextureImporter:
       name: slime_die_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 432
-        width: 80
-        height: 72
+        x: 577
+        y: 456
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,15 +485,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_die_8
+      name: slime_die_39
       rect:
         serializedVersion: 2
-        x: 640
-        y: 432
-        width: 80
-        height: 72
+        x: 742
+        y: 240
+        width: 23
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,10 +510,10 @@ TextureImporter:
       name: slime_die_9
       rect:
         serializedVersion: 2
-        x: 720
-        y: 432
-        width: 80
-        height: 72
+        x: 670
+        y: 460
+        width: 4
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -532,10 +532,10 @@ TextureImporter:
       name: slime_die_10
       rect:
         serializedVersion: 2
-        x: 800
-        y: 432
-        width: 80
-        height: 72
+        x: 24
+        y: 384
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: slime_die_11
       rect:
         serializedVersion: 2
-        x: 880
-        y: 432
-        width: 80
-        height: 72
+        x: 104
+        y: 384
+        width: 19
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -576,10 +576,10 @@ TextureImporter:
       name: slime_die_12
       rect:
         serializedVersion: 2
-        x: 960
-        y: 432
-        width: 80
-        height: 72
+        x: 182
+        y: 384
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -598,10 +598,10 @@ TextureImporter:
       name: slime_die_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 360
-        width: 80
-        height: 72
+        x: 260
+        y: 384
+        width: 27
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,10 +620,10 @@ TextureImporter:
       name: slime_die_14
       rect:
         serializedVersion: 2
-        x: 80
-        y: 360
-        width: 80
-        height: 72
+        x: 338
+        y: 384
+        width: 31
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -642,10 +642,10 @@ TextureImporter:
       name: slime_die_15
       rect:
         serializedVersion: 2
-        x: 160
-        y: 360
-        width: 80
-        height: 72
+        x: 418
+        y: 384
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -664,10 +664,10 @@ TextureImporter:
       name: slime_die_16
       rect:
         serializedVersion: 2
-        x: 240
-        y: 360
-        width: 80
-        height: 72
+        x: 497
+        y: 384
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -686,10 +686,10 @@ TextureImporter:
       name: slime_die_17
       rect:
         serializedVersion: 2
-        x: 320
-        y: 360
-        width: 80
-        height: 72
+        x: 577
+        y: 384
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -708,10 +708,10 @@ TextureImporter:
       name: slime_die_18
       rect:
         serializedVersion: 2
-        x: 400
-        y: 360
-        width: 80
-        height: 72
+        x: 661
+        y: 384
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,10 +730,10 @@ TextureImporter:
       name: slime_die_19
       rect:
         serializedVersion: 2
-        x: 480
-        y: 360
-        width: 80
-        height: 72
+        x: 670
+        y: 388
+        width: 4
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -752,10 +752,10 @@ TextureImporter:
       name: slime_die_20
       rect:
         serializedVersion: 2
-        x: 560
-        y: 360
-        width: 80
-        height: 72
+        x: 24
+        y: 312
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -774,10 +774,10 @@ TextureImporter:
       name: slime_die_21
       rect:
         serializedVersion: 2
-        x: 640
-        y: 360
-        width: 80
-        height: 72
+        x: 104
+        y: 312
+        width: 19
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,10 +796,10 @@ TextureImporter:
       name: slime_die_22
       rect:
         serializedVersion: 2
-        x: 720
-        y: 360
-        width: 80
-        height: 72
+        x: 182
+        y: 312
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -818,10 +818,10 @@ TextureImporter:
       name: slime_die_23
       rect:
         serializedVersion: 2
-        x: 800
-        y: 360
-        width: 80
-        height: 72
+        x: 260
+        y: 312
+        width: 27
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -840,10 +840,10 @@ TextureImporter:
       name: slime_die_24
       rect:
         serializedVersion: 2
-        x: 880
-        y: 360
-        width: 80
-        height: 72
+        x: 338
+        y: 312
+        width: 31
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -862,10 +862,10 @@ TextureImporter:
       name: slime_die_25
       rect:
         serializedVersion: 2
-        x: 960
-        y: 360
-        width: 80
-        height: 72
+        x: 418
+        y: 312
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -884,10 +884,10 @@ TextureImporter:
       name: slime_die_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 80
-        height: 72
+        x: 497
+        y: 312
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -906,10 +906,10 @@ TextureImporter:
       name: slime_die_27
       rect:
         serializedVersion: 2
-        x: 80
-        y: 288
-        width: 80
-        height: 72
+        x: 577
+        y: 312
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -928,10 +928,10 @@ TextureImporter:
       name: slime_die_28
       rect:
         serializedVersion: 2
-        x: 160
-        y: 288
-        width: 80
-        height: 72
+        x: 661
+        y: 312
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -950,10 +950,10 @@ TextureImporter:
       name: slime_die_29
       rect:
         serializedVersion: 2
-        x: 240
-        y: 288
-        width: 80
-        height: 72
+        x: 670
+        y: 316
+        width: 4
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,10 +972,10 @@ TextureImporter:
       name: slime_die_30
       rect:
         serializedVersion: 2
-        x: 320
-        y: 288
-        width: 80
-        height: 72
+        x: 24
+        y: 240
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -994,10 +994,10 @@ TextureImporter:
       name: slime_die_31
       rect:
         serializedVersion: 2
-        x: 400
-        y: 288
-        width: 80
-        height: 72
+        x: 104
+        y: 240
+        width: 19
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,10 +1016,10 @@ TextureImporter:
       name: slime_die_32
       rect:
         serializedVersion: 2
-        x: 480
-        y: 288
-        width: 80
-        height: 72
+        x: 182
+        y: 240
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1038,10 +1038,10 @@ TextureImporter:
       name: slime_die_33
       rect:
         serializedVersion: 2
-        x: 560
-        y: 288
-        width: 80
-        height: 72
+        x: 260
+        y: 240
+        width: 27
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1060,10 +1060,10 @@ TextureImporter:
       name: slime_die_34
       rect:
         serializedVersion: 2
-        x: 640
-        y: 288
-        width: 80
-        height: 72
+        x: 338
+        y: 240
+        width: 31
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1082,10 +1082,10 @@ TextureImporter:
       name: slime_die_35
       rect:
         serializedVersion: 2
-        x: 720
-        y: 288
-        width: 80
-        height: 72
+        x: 418
+        y: 240
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1104,10 +1104,10 @@ TextureImporter:
       name: slime_die_36
       rect:
         serializedVersion: 2
-        x: 800
-        y: 288
-        width: 80
-        height: 72
+        x: 497
+        y: 240
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1126,10 +1126,10 @@ TextureImporter:
       name: slime_die_37
       rect:
         serializedVersion: 2
-        x: 880
-        y: 288
-        width: 80
-        height: 72
+        x: 577
+        y: 240
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1148,10 +1148,10 @@ TextureImporter:
       name: slime_die_38
       rect:
         serializedVersion: 2
-        x: 960
-        y: 288
-        width: 80
-        height: 72
+        x: 661
+        y: 240
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1167,145 +1167,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_die_39
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c7e80c525f90316e0800000000000000
-      internalID: -1868138471923609988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_40
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d73e8534fe5f87720800000000000000
-      internalID: 2844293572660355965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_41
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64ae036a40d9f4fb0800000000000000
-      internalID: -4661334446011520442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_42
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abe7947fc47edde60800000000000000
-      internalID: 7988795631777447610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_43
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a1ecf2aa11b2d290800000000000000
-      internalID: -7867030871101087322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_44
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 482bb892d0cb1e900800000000000000
-      internalID: 712056980818866820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: slime_die_45
       rect:
         serializedVersion: 2
-        x: 480
-        y: 216
-        width: 80
-        height: 72
+        x: 418
+        y: 168
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1324,10 +1192,10 @@ TextureImporter:
       name: slime_die_46
       rect:
         serializedVersion: 2
-        x: 560
-        y: 216
-        width: 80
-        height: 72
+        x: 497
+        y: 168
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1346,10 +1214,10 @@ TextureImporter:
       name: slime_die_47
       rect:
         serializedVersion: 2
-        x: 640
-        y: 216
-        width: 80
-        height: 72
+        x: 577
+        y: 168
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1368,10 +1236,10 @@ TextureImporter:
       name: slime_die_48
       rect:
         serializedVersion: 2
-        x: 720
-        y: 216
-        width: 80
-        height: 72
+        x: 661
+        y: 168
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1390,10 +1258,10 @@ TextureImporter:
       name: slime_die_49
       rect:
         serializedVersion: 2
-        x: 800
-        y: 216
-        width: 80
-        height: 72
+        x: 670
+        y: 172
+        width: 4
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1412,10 +1280,10 @@ TextureImporter:
       name: slime_die_50
       rect:
         serializedVersion: 2
-        x: 880
-        y: 216
-        width: 80
-        height: 72
+        x: 24
+        y: 96
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1434,10 +1302,10 @@ TextureImporter:
       name: slime_die_51
       rect:
         serializedVersion: 2
-        x: 960
-        y: 216
-        width: 80
-        height: 72
+        x: 104
+        y: 96
+        width: 19
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1456,10 +1324,10 @@ TextureImporter:
       name: slime_die_52
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
-        width: 80
-        height: 72
+        x: 182
+        y: 96
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1478,10 +1346,10 @@ TextureImporter:
       name: slime_die_53
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
-        width: 80
-        height: 72
+        x: 260
+        y: 96
+        width: 27
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1500,10 +1368,10 @@ TextureImporter:
       name: slime_die_54
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
-        width: 80
-        height: 72
+        x: 338
+        y: 96
+        width: 31
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1522,10 +1390,10 @@ TextureImporter:
       name: slime_die_55
       rect:
         serializedVersion: 2
-        x: 240
-        y: 144
-        width: 80
-        height: 72
+        x: 418
+        y: 96
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1544,10 +1412,10 @@ TextureImporter:
       name: slime_die_56
       rect:
         serializedVersion: 2
-        x: 320
-        y: 144
-        width: 80
-        height: 72
+        x: 497
+        y: 96
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1566,10 +1434,10 @@ TextureImporter:
       name: slime_die_57
       rect:
         serializedVersion: 2
-        x: 400
-        y: 144
-        width: 80
-        height: 72
+        x: 577
+        y: 96
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1588,10 +1456,10 @@ TextureImporter:
       name: slime_die_58
       rect:
         serializedVersion: 2
-        x: 480
-        y: 144
-        width: 80
-        height: 72
+        x: 661
+        y: 96
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1610,10 +1478,10 @@ TextureImporter:
       name: slime_die_59
       rect:
         serializedVersion: 2
-        x: 560
-        y: 144
-        width: 80
-        height: 72
+        x: 670
+        y: 100
+        width: 4
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1632,10 +1500,10 @@ TextureImporter:
       name: slime_die_60
       rect:
         serializedVersion: 2
-        x: 640
-        y: 144
-        width: 80
-        height: 72
+        x: 24
+        y: 24
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1654,10 +1522,10 @@ TextureImporter:
       name: slime_die_61
       rect:
         serializedVersion: 2
-        x: 720
-        y: 144
-        width: 80
-        height: 72
+        x: 104
+        y: 24
+        width: 19
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1676,10 +1544,10 @@ TextureImporter:
       name: slime_die_62
       rect:
         serializedVersion: 2
-        x: 800
-        y: 144
-        width: 80
-        height: 72
+        x: 182
+        y: 24
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1698,10 +1566,10 @@ TextureImporter:
       name: slime_die_63
       rect:
         serializedVersion: 2
-        x: 880
-        y: 144
-        width: 80
-        height: 72
+        x: 260
+        y: 24
+        width: 27
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1720,10 +1588,10 @@ TextureImporter:
       name: slime_die_64
       rect:
         serializedVersion: 2
-        x: 960
-        y: 144
-        width: 80
-        height: 72
+        x: 338
+        y: 24
+        width: 31
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1742,10 +1610,10 @@ TextureImporter:
       name: slime_die_65
       rect:
         serializedVersion: 2
-        x: 0
-        y: 72
-        width: 80
-        height: 72
+        x: 418
+        y: 24
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1764,10 +1632,10 @@ TextureImporter:
       name: slime_die_66
       rect:
         serializedVersion: 2
-        x: 80
-        y: 72
-        width: 80
-        height: 72
+        x: 497
+        y: 24
+        width: 33
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1786,10 +1654,10 @@ TextureImporter:
       name: slime_die_67
       rect:
         serializedVersion: 2
-        x: 160
-        y: 72
-        width: 80
-        height: 72
+        x: 577
+        y: 24
+        width: 33
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1808,10 +1676,10 @@ TextureImporter:
       name: slime_die_68
       rect:
         serializedVersion: 2
-        x: 240
-        y: 72
-        width: 80
-        height: 72
+        x: 661
+        y: 24
+        width: 25
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1830,10 +1698,10 @@ TextureImporter:
       name: slime_die_69
       rect:
         serializedVersion: 2
-        x: 320
-        y: 72
-        width: 80
-        height: 72
+        x: 670
+        y: 28
+        width: 4
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1849,463 +1717,67 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_die_70
+      name: slime_die_40
       rect:
         serializedVersion: 2
-        x: 400
-        y: 72
-        width: 80
-        height: 72
+        x: 822
+        y: 240
+        width: 20
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: babbf0dcf6bd25e4586ea3332492212d
-      internalID: -1379117885
+      spriteID: e3ebe4ad860974c429f26db8d5c3e2de
+      internalID: 2844293572660355965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_die_71
+      name: slime_die_41
       rect:
         serializedVersion: 2
-        x: 480
-        y: 72
-        width: 80
-        height: 72
+        x: 911
+        y: 240
+        width: 9
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fc491b78a993a743825444afb145b48
-      internalID: 1138490472
+      spriteID: 1093ab2942862e34ea044057018cb4a0
+      internalID: -4661334446011520442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slime_die_72
+      name: slime_die_42
       rect:
         serializedVersion: 2
-        x: 560
-        y: 72
-        width: 80
-        height: 72
+        x: 992
+        y: 240
+        width: 8
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1e0ae2221e72f459fd6ef2131bdf0b
-      internalID: 1896993208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_73
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8588c3efdd9796d49b45c9d664a932a6
-      internalID: 917189182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_74
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 201ad74f7f3fc3049a6c61f0822b4ad3
-      internalID: -837799032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_75
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb24c0f799bed3f449895767f007841a
-      internalID: -1078884914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_76
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39e0359c184c3e044ac04a513abadaec
-      internalID: 2115451185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_77
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c5a9cff09d5ef24d8ef6d62e4f5cd11
-      internalID: -1747009525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_78
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ad84d6ed9067a5479e2296fbcab7763
-      internalID: 1503361802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_79
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e144c21e1d9d6ef418dcf9b5f04ece81
-      internalID: 1926522989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_80
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0847b6295bf74b6499f6bdf95db5c2f1
-      internalID: 1589590877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_81
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e326e4a698349d8459a449bdae370fb2
-      internalID: -1707806572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_82
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6548e14767fdf9048849de2a01988466
-      internalID: -1026861168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_83
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f98c9ec01092fa4890a57e36867a97b
-      internalID: -244782076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_84
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28533f98659cf5641ac20506f8f9532c
-      internalID: 1081730262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_85
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c146b6ea3be5a147be0d69e8f2c2669
-      internalID: -1566482797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_86
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad25d7a3bc2f9f5418dcdcda08d6ad9c
-      internalID: 1262368948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_87
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7e92852797375e45ba019d72803fb8c
-      internalID: -1281202234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_88
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f14ff228a836ea49b40eea582bc97d7
-      internalID: 900635726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_89
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 756acd987a0da0941ba3159859884c22
-      internalID: -1863743332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slime_die_90
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b88a3300f0d45342a0562bc8243f196
-      internalID: 245438956
+      spriteID: 1403d34d0a5e9704697c9396ec33fda0
+      internalID: 7988795631777447610
       vertices: []
       indices: 
       edges: []
@@ -2324,7 +1796,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":7.0},"gridSpriteSize":{"x":80.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       slime_die_0: -2516762362254202662
       slime_die_1: 4028818169658037017
@@ -2359,7 +1831,7 @@ TextureImporter:
       slime_die_36: -6129334830308833670
       slime_die_37: -8774367523382234984
       slime_die_38: -7552557390221258548
-      slime_die_39: -1868138471923609988
+      slime_die_39: -9042591463834676383
       slime_die_4: 233026510659435081
       slime_die_40: 2844293572660355965
       slime_die_41: -4661334446011520442
@@ -2394,29 +1866,7 @@ TextureImporter:
       slime_die_68: 7789501720702828902
       slime_die_69: 2071672506535549966
       slime_die_7: -5504834807954807366
-      slime_die_70: -1379117885
-      slime_die_71: 1138490472
-      slime_die_72: 1896993208
-      slime_die_73: 917189182
-      slime_die_74: -837799032
-      slime_die_75: -1078884914
-      slime_die_76: 2115451185
-      slime_die_77: -1747009525
-      slime_die_78: 1503361802
-      slime_die_79: 1926522989
-      slime_die_8: -9042591463834676383
-      slime_die_80: 1589590877
-      slime_die_81: -1707806572
-      slime_die_82: -1026861168
-      slime_die_83: -244782076
-      slime_die_84: 1081730262
-      slime_die_85: -1566482797
-      slime_die_86: 1262368948
-      slime_die_87: -1281202234
-      slime_die_88: 900635726
-      slime_die_89: -1863743332
       slime_die_9: 7869184293459343042
-      slime_die_90: 245438956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

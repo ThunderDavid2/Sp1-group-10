@@ -396,10 +396,10 @@ TextureImporter:
       name: slime_swallow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 432
-        width: 80
-        height: 72
+        x: 24
+        y: 456
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: slime_swallow_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 432
-        width: 80
-        height: 72
+        x: 104
+        y: 456
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: slime_swallow_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 432
-        width: 80
-        height: 72
+        x: 184
+        y: 456
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: slime_swallow_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 432
-        width: 80
-        height: 72
+        x: 264
+        y: 456
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: slime_swallow_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 432
-        width: 80
-        height: 72
+        x: 344
+        y: 456
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,10 +506,10 @@ TextureImporter:
       name: slime_swallow_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 432
-        width: 80
-        height: 72
+        x: 424
+        y: 456
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: slime_swallow_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 432
-        width: 80
-        height: 72
+        x: 504
+        y: 456
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,10 +550,10 @@ TextureImporter:
       name: slime_swallow_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 432
-        width: 80
-        height: 72
+        x: 584
+        y: 456
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: slime_swallow_8
       rect:
         serializedVersion: 2
-        x: 640
-        y: 432
-        width: 80
-        height: 72
+        x: 664
+        y: 456
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,10 +594,10 @@ TextureImporter:
       name: slime_swallow_9
       rect:
         serializedVersion: 2
-        x: 720
-        y: 432
-        width: 80
-        height: 72
+        x: 744
+        y: 456
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,10 +616,10 @@ TextureImporter:
       name: slime_swallow_10
       rect:
         serializedVersion: 2
-        x: 800
-        y: 432
-        width: 80
-        height: 72
+        x: 824
+        y: 456
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: slime_swallow_11
       rect:
         serializedVersion: 2
-        x: 880
-        y: 432
-        width: 80
-        height: 72
+        x: 904
+        y: 456
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,10 +660,10 @@ TextureImporter:
       name: slime_swallow_12
       rect:
         serializedVersion: 2
-        x: 960
-        y: 432
-        width: 80
-        height: 72
+        x: 984
+        y: 456
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,10 +682,10 @@ TextureImporter:
       name: slime_swallow_13
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 432
-        width: 80
-        height: 72
+        x: 1064
+        y: 456
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,10 +704,10 @@ TextureImporter:
       name: slime_swallow_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 360
-        width: 80
-        height: 72
+        x: 24
+        y: 384
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,10 +726,10 @@ TextureImporter:
       name: slime_swallow_15
       rect:
         serializedVersion: 2
-        x: 80
-        y: 360
-        width: 80
-        height: 72
+        x: 104
+        y: 384
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,10 +748,10 @@ TextureImporter:
       name: slime_swallow_16
       rect:
         serializedVersion: 2
-        x: 160
-        y: 360
-        width: 80
-        height: 72
+        x: 184
+        y: 384
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,10 +770,10 @@ TextureImporter:
       name: slime_swallow_17
       rect:
         serializedVersion: 2
-        x: 240
-        y: 360
-        width: 80
-        height: 72
+        x: 264
+        y: 384
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -792,10 +792,10 @@ TextureImporter:
       name: slime_swallow_18
       rect:
         serializedVersion: 2
-        x: 320
-        y: 360
-        width: 80
-        height: 72
+        x: 344
+        y: 384
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,10 +814,10 @@ TextureImporter:
       name: slime_swallow_19
       rect:
         serializedVersion: 2
-        x: 400
-        y: 360
-        width: 80
-        height: 72
+        x: 424
+        y: 384
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -836,10 +836,10 @@ TextureImporter:
       name: slime_swallow_20
       rect:
         serializedVersion: 2
-        x: 480
-        y: 360
-        width: 80
-        height: 72
+        x: 504
+        y: 384
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,10 +858,10 @@ TextureImporter:
       name: slime_swallow_21
       rect:
         serializedVersion: 2
-        x: 560
-        y: 360
-        width: 80
-        height: 72
+        x: 584
+        y: 384
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,10 +880,10 @@ TextureImporter:
       name: slime_swallow_22
       rect:
         serializedVersion: 2
-        x: 640
-        y: 360
-        width: 80
-        height: 72
+        x: 664
+        y: 384
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -902,10 +902,10 @@ TextureImporter:
       name: slime_swallow_23
       rect:
         serializedVersion: 2
-        x: 720
-        y: 360
-        width: 80
-        height: 72
+        x: 744
+        y: 384
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -924,10 +924,10 @@ TextureImporter:
       name: slime_swallow_24
       rect:
         serializedVersion: 2
-        x: 800
-        y: 360
-        width: 80
-        height: 72
+        x: 824
+        y: 384
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,10 +946,10 @@ TextureImporter:
       name: slime_swallow_25
       rect:
         serializedVersion: 2
-        x: 880
-        y: 360
-        width: 80
-        height: 72
+        x: 904
+        y: 384
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -968,10 +968,10 @@ TextureImporter:
       name: slime_swallow_26
       rect:
         serializedVersion: 2
-        x: 960
-        y: 360
-        width: 80
-        height: 72
+        x: 984
+        y: 384
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,10 +990,10 @@ TextureImporter:
       name: slime_swallow_27
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 360
-        width: 80
-        height: 72
+        x: 1064
+        y: 384
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1012,10 +1012,10 @@ TextureImporter:
       name: slime_swallow_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 80
-        height: 72
+        x: 24
+        y: 312
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1034,10 +1034,10 @@ TextureImporter:
       name: slime_swallow_29
       rect:
         serializedVersion: 2
-        x: 80
-        y: 288
-        width: 80
-        height: 72
+        x: 104
+        y: 312
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,10 +1056,10 @@ TextureImporter:
       name: slime_swallow_30
       rect:
         serializedVersion: 2
-        x: 160
-        y: 288
-        width: 80
-        height: 72
+        x: 184
+        y: 312
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1078,10 +1078,10 @@ TextureImporter:
       name: slime_swallow_31
       rect:
         serializedVersion: 2
-        x: 240
-        y: 288
-        width: 80
-        height: 72
+        x: 264
+        y: 312
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1100,10 @@ TextureImporter:
       name: slime_swallow_32
       rect:
         serializedVersion: 2
-        x: 320
-        y: 288
-        width: 80
-        height: 72
+        x: 344
+        y: 312
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1122,10 +1122,10 @@ TextureImporter:
       name: slime_swallow_33
       rect:
         serializedVersion: 2
-        x: 400
-        y: 288
-        width: 80
-        height: 72
+        x: 424
+        y: 312
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1144,10 +1144,10 @@ TextureImporter:
       name: slime_swallow_34
       rect:
         serializedVersion: 2
-        x: 480
-        y: 288
-        width: 80
-        height: 72
+        x: 504
+        y: 312
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,10 +1166,10 @@ TextureImporter:
       name: slime_swallow_35
       rect:
         serializedVersion: 2
-        x: 560
-        y: 288
-        width: 80
-        height: 72
+        x: 584
+        y: 312
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1188,10 +1188,10 @@ TextureImporter:
       name: slime_swallow_36
       rect:
         serializedVersion: 2
-        x: 640
-        y: 288
-        width: 80
-        height: 72
+        x: 664
+        y: 312
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1210,10 +1210,10 @@ TextureImporter:
       name: slime_swallow_37
       rect:
         serializedVersion: 2
-        x: 720
-        y: 288
-        width: 80
-        height: 72
+        x: 744
+        y: 312
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1232,10 +1232,10 @@ TextureImporter:
       name: slime_swallow_38
       rect:
         serializedVersion: 2
-        x: 800
-        y: 288
-        width: 80
-        height: 72
+        x: 824
+        y: 312
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1254,10 +1254,10 @@ TextureImporter:
       name: slime_swallow_39
       rect:
         serializedVersion: 2
-        x: 880
-        y: 288
-        width: 80
-        height: 72
+        x: 904
+        y: 312
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1276,10 +1276,10 @@ TextureImporter:
       name: slime_swallow_40
       rect:
         serializedVersion: 2
-        x: 960
-        y: 288
-        width: 80
-        height: 72
+        x: 984
+        y: 312
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1298,10 +1298,10 @@ TextureImporter:
       name: slime_swallow_41
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 288
-        width: 80
-        height: 72
+        x: 1064
+        y: 312
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1320,10 +1320,10 @@ TextureImporter:
       name: slime_swallow_42
       rect:
         serializedVersion: 2
-        x: 0
-        y: 216
-        width: 80
-        height: 72
+        x: 24
+        y: 240
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1342,10 +1342,10 @@ TextureImporter:
       name: slime_swallow_43
       rect:
         serializedVersion: 2
-        x: 80
-        y: 216
-        width: 80
-        height: 72
+        x: 104
+        y: 240
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1364,10 +1364,10 @@ TextureImporter:
       name: slime_swallow_44
       rect:
         serializedVersion: 2
-        x: 160
-        y: 216
-        width: 80
-        height: 72
+        x: 184
+        y: 240
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1386,10 +1386,10 @@ TextureImporter:
       name: slime_swallow_45
       rect:
         serializedVersion: 2
-        x: 240
-        y: 216
-        width: 80
-        height: 72
+        x: 264
+        y: 240
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1408,10 +1408,10 @@ TextureImporter:
       name: slime_swallow_46
       rect:
         serializedVersion: 2
-        x: 320
-        y: 216
-        width: 80
-        height: 72
+        x: 344
+        y: 240
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1430,10 +1430,10 @@ TextureImporter:
       name: slime_swallow_47
       rect:
         serializedVersion: 2
-        x: 400
-        y: 216
-        width: 80
-        height: 72
+        x: 424
+        y: 240
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1452,10 +1452,10 @@ TextureImporter:
       name: slime_swallow_48
       rect:
         serializedVersion: 2
-        x: 480
-        y: 216
-        width: 80
-        height: 72
+        x: 504
+        y: 240
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1474,10 +1474,10 @@ TextureImporter:
       name: slime_swallow_49
       rect:
         serializedVersion: 2
-        x: 560
-        y: 216
-        width: 80
-        height: 72
+        x: 584
+        y: 240
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1496,10 +1496,10 @@ TextureImporter:
       name: slime_swallow_50
       rect:
         serializedVersion: 2
-        x: 640
-        y: 216
-        width: 80
-        height: 72
+        x: 664
+        y: 240
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1518,10 +1518,10 @@ TextureImporter:
       name: slime_swallow_51
       rect:
         serializedVersion: 2
-        x: 720
-        y: 216
-        width: 80
-        height: 72
+        x: 744
+        y: 240
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1540,10 +1540,10 @@ TextureImporter:
       name: slime_swallow_52
       rect:
         serializedVersion: 2
-        x: 800
-        y: 216
-        width: 80
-        height: 72
+        x: 824
+        y: 240
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1562,10 +1562,10 @@ TextureImporter:
       name: slime_swallow_53
       rect:
         serializedVersion: 2
-        x: 880
-        y: 216
-        width: 80
-        height: 72
+        x: 904
+        y: 240
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1584,10 +1584,10 @@ TextureImporter:
       name: slime_swallow_54
       rect:
         serializedVersion: 2
-        x: 960
-        y: 216
-        width: 80
-        height: 72
+        x: 984
+        y: 240
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1606,10 +1606,10 @@ TextureImporter:
       name: slime_swallow_55
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 216
-        width: 80
-        height: 72
+        x: 1064
+        y: 240
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1628,10 +1628,10 @@ TextureImporter:
       name: slime_swallow_56
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
-        width: 80
-        height: 72
+        x: 24
+        y: 168
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1650,10 +1650,10 @@ TextureImporter:
       name: slime_swallow_57
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
-        width: 80
-        height: 72
+        x: 104
+        y: 168
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1672,10 +1672,10 @@ TextureImporter:
       name: slime_swallow_58
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
-        width: 80
-        height: 72
+        x: 184
+        y: 168
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1694,10 +1694,10 @@ TextureImporter:
       name: slime_swallow_59
       rect:
         serializedVersion: 2
-        x: 240
-        y: 144
-        width: 80
-        height: 72
+        x: 264
+        y: 168
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1716,10 +1716,10 @@ TextureImporter:
       name: slime_swallow_60
       rect:
         serializedVersion: 2
-        x: 320
-        y: 144
-        width: 80
-        height: 72
+        x: 344
+        y: 168
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1738,10 +1738,10 @@ TextureImporter:
       name: slime_swallow_61
       rect:
         serializedVersion: 2
-        x: 400
-        y: 144
-        width: 80
-        height: 72
+        x: 424
+        y: 168
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1760,10 +1760,10 @@ TextureImporter:
       name: slime_swallow_62
       rect:
         serializedVersion: 2
-        x: 480
-        y: 144
-        width: 80
-        height: 72
+        x: 504
+        y: 168
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1782,10 +1782,10 @@ TextureImporter:
       name: slime_swallow_63
       rect:
         serializedVersion: 2
-        x: 560
-        y: 144
-        width: 80
-        height: 72
+        x: 584
+        y: 168
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1804,10 +1804,10 @@ TextureImporter:
       name: slime_swallow_64
       rect:
         serializedVersion: 2
-        x: 640
-        y: 144
-        width: 80
-        height: 72
+        x: 664
+        y: 168
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1826,10 +1826,10 @@ TextureImporter:
       name: slime_swallow_65
       rect:
         serializedVersion: 2
-        x: 720
-        y: 144
-        width: 80
-        height: 72
+        x: 744
+        y: 168
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1848,10 +1848,10 @@ TextureImporter:
       name: slime_swallow_66
       rect:
         serializedVersion: 2
-        x: 800
-        y: 144
-        width: 80
-        height: 72
+        x: 824
+        y: 168
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1870,10 +1870,10 @@ TextureImporter:
       name: slime_swallow_67
       rect:
         serializedVersion: 2
-        x: 880
-        y: 144
-        width: 80
-        height: 72
+        x: 904
+        y: 168
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1892,10 +1892,10 @@ TextureImporter:
       name: slime_swallow_68
       rect:
         serializedVersion: 2
-        x: 960
-        y: 144
-        width: 80
-        height: 72
+        x: 984
+        y: 168
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1914,10 +1914,10 @@ TextureImporter:
       name: slime_swallow_69
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 144
-        width: 80
-        height: 72
+        x: 1064
+        y: 168
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1936,10 +1936,10 @@ TextureImporter:
       name: slime_swallow_70
       rect:
         serializedVersion: 2
-        x: 0
-        y: 72
-        width: 80
-        height: 72
+        x: 24
+        y: 96
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1958,10 +1958,10 @@ TextureImporter:
       name: slime_swallow_71
       rect:
         serializedVersion: 2
-        x: 80
-        y: 72
-        width: 80
-        height: 72
+        x: 104
+        y: 96
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1980,10 +1980,10 @@ TextureImporter:
       name: slime_swallow_72
       rect:
         serializedVersion: 2
-        x: 160
-        y: 72
-        width: 80
-        height: 72
+        x: 184
+        y: 96
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2002,10 +2002,10 @@ TextureImporter:
       name: slime_swallow_73
       rect:
         serializedVersion: 2
-        x: 240
-        y: 72
-        width: 80
-        height: 72
+        x: 264
+        y: 96
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2024,10 +2024,10 @@ TextureImporter:
       name: slime_swallow_74
       rect:
         serializedVersion: 2
-        x: 320
-        y: 72
-        width: 80
-        height: 72
+        x: 344
+        y: 96
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2046,10 +2046,10 @@ TextureImporter:
       name: slime_swallow_75
       rect:
         serializedVersion: 2
-        x: 400
-        y: 72
-        width: 80
-        height: 72
+        x: 424
+        y: 96
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2068,10 +2068,10 @@ TextureImporter:
       name: slime_swallow_76
       rect:
         serializedVersion: 2
-        x: 480
-        y: 72
-        width: 80
-        height: 72
+        x: 504
+        y: 96
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2090,10 +2090,10 @@ TextureImporter:
       name: slime_swallow_77
       rect:
         serializedVersion: 2
-        x: 560
-        y: 72
-        width: 80
-        height: 72
+        x: 584
+        y: 96
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2112,10 +2112,10 @@ TextureImporter:
       name: slime_swallow_78
       rect:
         serializedVersion: 2
-        x: 640
-        y: 72
-        width: 80
-        height: 72
+        x: 664
+        y: 96
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2134,10 +2134,10 @@ TextureImporter:
       name: slime_swallow_79
       rect:
         serializedVersion: 2
-        x: 720
-        y: 72
-        width: 80
-        height: 72
+        x: 744
+        y: 96
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2156,10 +2156,10 @@ TextureImporter:
       name: slime_swallow_80
       rect:
         serializedVersion: 2
-        x: 800
-        y: 72
-        width: 80
-        height: 72
+        x: 824
+        y: 96
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2178,10 +2178,10 @@ TextureImporter:
       name: slime_swallow_81
       rect:
         serializedVersion: 2
-        x: 880
-        y: 72
-        width: 80
-        height: 72
+        x: 904
+        y: 96
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2200,10 +2200,10 @@ TextureImporter:
       name: slime_swallow_82
       rect:
         serializedVersion: 2
-        x: 960
-        y: 72
-        width: 80
-        height: 72
+        x: 984
+        y: 96
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2222,10 +2222,10 @@ TextureImporter:
       name: slime_swallow_83
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 72
-        width: 80
-        height: 72
+        x: 1064
+        y: 96
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2244,10 +2244,10 @@ TextureImporter:
       name: slime_swallow_84
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 80
-        height: 72
+        x: 24
+        y: 24
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2266,10 +2266,10 @@ TextureImporter:
       name: slime_swallow_85
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 80
-        height: 72
+        x: 104
+        y: 24
+        width: 22
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2288,10 +2288,10 @@ TextureImporter:
       name: slime_swallow_86
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 80
-        height: 72
+        x: 184
+        y: 24
+        width: 33
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2310,10 +2310,10 @@ TextureImporter:
       name: slime_swallow_87
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
-        width: 80
-        height: 72
+        x: 264
+        y: 24
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2332,10 +2332,10 @@ TextureImporter:
       name: slime_swallow_88
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 80
-        height: 72
+        x: 344
+        y: 24
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2354,10 +2354,10 @@ TextureImporter:
       name: slime_swallow_89
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 80
-        height: 72
+        x: 424
+        y: 24
+        width: 40
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2376,10 +2376,10 @@ TextureImporter:
       name: slime_swallow_90
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 80
-        height: 72
+        x: 504
+        y: 24
+        width: 38
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2398,10 +2398,10 @@ TextureImporter:
       name: slime_swallow_91
       rect:
         serializedVersion: 2
-        x: 560
-        y: 0
-        width: 80
-        height: 72
+        x: 584
+        y: 24
+        width: 36
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2420,10 +2420,10 @@ TextureImporter:
       name: slime_swallow_92
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 80
-        height: 72
+        x: 664
+        y: 24
+        width: 34
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2442,10 +2442,10 @@ TextureImporter:
       name: slime_swallow_93
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 80
-        height: 72
+        x: 744
+        y: 24
+        width: 32
+        height: 19
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2464,10 +2464,10 @@ TextureImporter:
       name: slime_swallow_94
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 80
-        height: 72
+        x: 824
+        y: 24
+        width: 28
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2486,10 +2486,10 @@ TextureImporter:
       name: slime_swallow_95
       rect:
         serializedVersion: 2
-        x: 880
-        y: 0
-        width: 80
-        height: 72
+        x: 904
+        y: 24
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2508,10 +2508,10 @@ TextureImporter:
       name: slime_swallow_96
       rect:
         serializedVersion: 2
-        x: 960
-        y: 0
-        width: 80
-        height: 72
+        x: 984
+        y: 24
+        width: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2530,10 +2530,10 @@ TextureImporter:
       name: slime_swallow_97
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 0
-        width: 80
-        height: 72
+        x: 1064
+        y: 24
+        width: 19
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2562,7 +2562,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":14.0,"y":7.0},"gridSpriteSize":{"x":80.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       slime_swallow_0: 2663700034865161911
       slime_swallow_1: 4645590424715032595
