@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,24 +8,35 @@ public class EnemyAttacks : MonoBehaviour
     [SerializeField] private Transform bulletPos;
 
     private float timer;
+    private GameObject player;
 
-   
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     private void Update()
     {
-        timer += Time.deltaTime;
+        float distance = Vector2.Distance(transform.transform.position, player.transform.position);
 
-        if(timer > 2)
+        if(distance < 10)
         {
-            timer = 0;
-            shoot();
-        }
+            timer += Time.deltaTime;
+            
+            if(timer > 2)
+            {
+                timer = 0;
+                shoot();
+            }
 
+        }
     }
 
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
     }
-
+    
+    
 }
+
