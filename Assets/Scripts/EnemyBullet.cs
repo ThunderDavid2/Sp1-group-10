@@ -31,6 +31,12 @@ public class EnemyBullet : MonoBehaviour
         {
             rend.flipX = false;
         }
+        timer += Time.deltaTime;
+
+        if(timer > 4)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
