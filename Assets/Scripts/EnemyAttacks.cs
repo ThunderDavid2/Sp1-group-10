@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EnemyAttacks : MonoBehaviour
 {
@@ -21,7 +22,6 @@ public class EnemyAttacks : MonoBehaviour
     private void Update()
     {
         float distance = Vector2.Distance(transform.transform.position, player.transform.position);
-
         if(distance < 10)
         {
             timer += Time.deltaTime;

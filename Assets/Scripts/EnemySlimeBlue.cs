@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 
 public class EnemySlimeBlue : MonoBehaviour
 {
@@ -7,28 +9,53 @@ public class EnemySlimeBlue : MonoBehaviour
     [SerializeField] private float knockbackForce = 500f;
     [SerializeField] private float upwardsForce = 500f;
     [SerializeField] private int damageGiven = 1;
-
     [SerializeField] private float slimeHeight;
+    private bool playerNearby = false;
     private SpriteRenderer rend;
     private Animator anim;
+    private Rigidbody2D rgbd;
+    private Transform target;
+    private Vector2 moveDirection;
+    private GameObject player;
+
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
+        rgbd = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        target = GameObject.Find("Player").transform;
     }
 
     private void Update()
     {
-        if(moveSpeed < 0)
+        float distance = Vector2.Distance(transform.transform.position, player.transform.position);
+        if(distance < 20)
         {
-            rend.flipX = true;
+            if(target)
+            {
+                Vector2 direction = (target.position - transform.position).normalized;
+                moveDirection = direction;
+                rgbd.linearVelocity = new Vector2(moveDirection.x, 0) * moveSpeed;
+            }
         }
-        else
+
+
+        if(distance > 20)
         {
-            rend.flipX = false;
+            if (moveSpeed < 0)
+            {
+                rend.flipX = true;
+            }
+            else
+            {
+                rend.flipX = false;
+            }
+            transform.Translate(new Vector2(moveSpeed, 0) * Time.deltaTime);
         }
-        transform.Translate(new Vector2(moveSpeed, 0) * Time.deltaTime);
+
+      
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -43,8 +70,9 @@ public class EnemySlimeBlue : MonoBehaviour
             {
                 return;
             }
-        }
         other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageGiven);
+        }
+        
 
         if(other.transform.position.x > transform.position.x)
         {
