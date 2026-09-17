@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Terrain (16x16)_51
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
   m_Sprite: {fileID: 1715580512, guid: 7da6f3e60177f9740bbc830b9071d6e2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.18905488, g: 0.48138213, b: 0.7610062, a: 1}
   m_Transform:
     e00: 1
     e01: 0
