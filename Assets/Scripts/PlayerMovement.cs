@@ -22,10 +22,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform leftFoot, rightFoot;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float raycastDistance = 0.25f;
+    [SerializeField] private float wallDistance = 0.25f;
     [SerializeField] private AudioClip[] jumpSounds;
     [SerializeField] private ParticleSystem jumpParticleSystem;
 
     private bool isRunning;
+    private bool hasJumped;
+    private bool onWall;
     bool running = true;
 
 
@@ -81,6 +84,7 @@ public void PlayerDamage()
         {
             FlipSprite(false);
         }
+
         // Vänder spriten baserat på vilket håll den går åt 
     }
     private void FixedUpdate()
@@ -92,7 +96,7 @@ public void PlayerDamage()
         float currentSpeed = isRunning ? runSpeed : moveSpeed;
         rgbd.linearVelocity = new Vector2(moveDirection * currentSpeed, rgbd.linearVelocity.y);
 
-
+        Glide();
         // rgbd.linearVelocity = new Vector2(moveDirection * moveSpeed * Time.deltaTime, rgbd.linearVelocity.y);
     }
 
@@ -112,13 +116,27 @@ public void PlayerDamage()
     {
         if (CheckIsGrounded() == true)
         {
-            rgbd.AddForce(new Vector2(0, jumpForce));
-            jumpParticleSystem.Play();
-            int randomJumpSound = Random.Range(0, jumpSounds.Length);
-            audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
-
+            PerformJump();
+            hasJumped = true;
+        }
+        else if (hasJumped == true)
+        {
+           PerformJump();
+           hasJumped = false;
         }
     }
+
+    private void PerformJump()
+    {
+        rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0f);
+        rgbd.AddForce(new Vector2(0, jumpForce));
+        jumpParticleSystem.Play();
+        int randomJumpSound = Random.Range(0, jumpSounds.Length);
+        audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+
+   
+    }
+
     private bool CheckIsGrounded() 
     {
         RaycastHit2D leftHit = Physics2D.Raycast(leftFoot.position, Vector2.down, raycastDistance, whatIsGround);
@@ -149,6 +167,32 @@ public void PlayerDamage()
     {
         running = true;
     }
+
+    private bool isOnWall()
+    {
+        
+        RaycastHit2D leftHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.left, wallDistance, whatIsGround);
+        RaycastHit2D rightHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.right, wallDistance, whatIsGround);
+        Debug.DrawRay(transform.position, Vector2.left * wallDistance, Color.cyan);
+        Debug.DrawRay(transform.position, Vector2.right * wallDistance, Color.cyan);
+        if ( leftHit || rightHit)
+        {
+            return true;
+        }
+        else
+        {
+            return false; 
+        }
+    }
+
+    private void Glide()
+{
+  
+    if (isOnWall() && rgbd.linearVelocity.y < -0.3f)
+    {
+        rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, -0.3f);
+    }
+}
 
 
 }

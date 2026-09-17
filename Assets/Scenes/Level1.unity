@@ -69661,6 +69661,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1088
   raycastDistance: 0.25
+  wallDistance: 0.5
   jumpSounds:
   - {fileID: 8300000, guid: 17ee75c669b74ec47a9483b5622a8461, type: 3}
   - {fileID: 8300000, guid: 64f653c0296826e478a1893f045cf752, type: 3}
