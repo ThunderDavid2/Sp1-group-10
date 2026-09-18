@@ -52321,7 +52321,7 @@ GameObject:
   - component: {fileID: 1156809460}
   - component: {fileID: 1156809461}
   - component: {fileID: 1156809462}
-  m_Layer: 7
+  m_Layer: 12
   m_Name: EnemyJumping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52510,7 +52510,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0038568974, y: 0.23102278}
+  m_Offset: {x: 0.0038568974, y: 0.23942873}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -52520,7 +52520,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6177583, y: 0.46840572}
+  m_Size: {x: 0.6177583, y: 0.48521763}
   m_EdgeRadius: 0
 --- !u!61 &1156809462
 BoxCollider2D:
@@ -52556,7 +52556,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0021102428, y: 0.50913507}
+  m_Offset: {x: -0.0021102428, y: 0.51660705}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -52566,7 +52566,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.61418486, y: 0.085587144}
+  m_Size: {x: 0.61418486, y: 0.07064319}
   m_EdgeRadius: 0
 --- !u!1 &1157679611
 GameObject:
