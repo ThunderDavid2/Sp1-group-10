@@ -250,6 +250,7 @@ MonoBehaviour:
   upwardsForce: 500
   damageGiven: 1
   slimeHeight: 2.34
+  slimeDrop: {fileID: 7810298314740993299, guid: 3a4ea76bf8e60404487a1a4e701f7560, type: 3}
 --- !u!95 &5530584847766073773
 Animator:
   serializedVersion: 7

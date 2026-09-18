@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,6 +11,7 @@ public class EnemySlimeBlue : MonoBehaviour
     [SerializeField] private float upwardsForce = 500f;
     [SerializeField] private int damageGiven = 1;
     [SerializeField] private float slimeHeight;
+    [SerializeField] private GameObject slimeDrop;
     private bool playerNearby = false;
     private SpriteRenderer rend;
     private Animator anim;
@@ -17,6 +19,7 @@ public class EnemySlimeBlue : MonoBehaviour
     private Transform target;
     private Vector2 moveDirection;
     private GameObject player;
+ 
 
 
     private void Start()
@@ -38,6 +41,14 @@ public class EnemySlimeBlue : MonoBehaviour
                 Vector2 direction = (target.position - transform.position).normalized;
                 moveDirection = direction;
                 rgbd.linearVelocity = new Vector2(moveDirection.x, 0) * moveSpeed;
+            }
+            if (moveDirection.x < 0f)
+            {
+                rend.flipX = true;
+            }
+            if (moveDirection.x > 0f)
+            {
+                rend.flipX = false;
             }
         }
 
@@ -104,6 +115,7 @@ public class EnemySlimeBlue : MonoBehaviour
 
     private void OnDeath()
     {
+        Instantiate(slimeDrop, (Vector2)transform.position + new Vector2(0f, 2f), Quaternion.identity);
         Destroy(gameObject);
         
     }
