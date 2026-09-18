@@ -77,18 +77,6 @@ public class EnemySlimeGray : MonoBehaviour
                 rend.flipX = false;
             }
         }
-        if(distance > 30)
-        {
-            if(moveSpeed < 0f)
-            {
-                rend.flipX = true;
-            }
-            if(moveSpeed > 0f)
-            {
-                rend.flipX = false;
-            }
-            transform.Translate(new Vector2(moveSpeed, 0) * Time.deltaTime);
-        }
 
     }
 
@@ -99,6 +87,7 @@ public class EnemySlimeGray : MonoBehaviour
             shouldJump = false;
             Vector2 jumpDirection = (target.position - transform.position).normalized;
             rgbd.AddForce(new Vector2(jumpDirection.x, jumpForce), ForceMode2D.Impulse);
+            anim.SetTrigger("Jump");
 
         } 
     }
@@ -106,10 +95,6 @@ public class EnemySlimeGray : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("EnemyBlock") || other.gameObject.CompareTag("Enemy"))
-        {
-            moveSpeed = -moveSpeed;
-        }
         if (other.gameObject.CompareTag("Player"))
         {
             if (other.transform.transform.position.y > transform.position.y + slimeHeight)
@@ -141,7 +126,7 @@ public class EnemySlimeGray : MonoBehaviour
                 rgbd.AddForce(new Vector2(0, bounciness));
                 anim.SetTrigger("Death");
                 GetComponent<EnemySlimeGray>().enabled = false;
-                damageGiven = 0;
+                damageGiven = 1;
                 Invoke(nameof(OnDeath), 1f);
             }
 

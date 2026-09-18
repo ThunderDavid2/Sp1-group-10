@@ -333,12 +333,12 @@ TextureImporter:
       name: slime_jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 472
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -355,12 +355,12 @@ TextureImporter:
       name: slime_jump_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 480
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -377,12 +377,12 @@ TextureImporter:
       name: slime_jump_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 484
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -399,12 +399,12 @@ TextureImporter:
       name: slime_jump_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 487
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: slime_jump_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 484
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -443,12 +443,12 @@ TextureImporter:
       name: slime_jump_5
       rect:
         serializedVersion: 2
-        x: 400
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 480
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -465,12 +465,12 @@ TextureImporter:
       name: slime_jump_6
       rect:
         serializedVersion: 2
-        x: 480
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 472
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -487,12 +487,12 @@ TextureImporter:
       name: slime_jump_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 456
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: slime_jump_8
       rect:
         serializedVersion: 2
-        x: 640
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 456
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -531,12 +531,12 @@ TextureImporter:
       name: slime_jump_9
       rect:
         serializedVersion: 2
-        x: 720
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 456
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -553,12 +553,12 @@ TextureImporter:
       name: slime_jump_10
       rect:
         serializedVersion: 2
-        x: 800
-        y: 432
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 456
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -575,12 +575,12 @@ TextureImporter:
       name: slime_jump_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 400
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -597,12 +597,12 @@ TextureImporter:
       name: slime_jump_12
       rect:
         serializedVersion: 2
-        x: 80
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 408
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -619,12 +619,12 @@ TextureImporter:
       name: slime_jump_13
       rect:
         serializedVersion: 2
-        x: 160
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 412
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -641,12 +641,12 @@ TextureImporter:
       name: slime_jump_14
       rect:
         serializedVersion: 2
-        x: 240
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 415
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -663,12 +663,12 @@ TextureImporter:
       name: slime_jump_15
       rect:
         serializedVersion: 2
-        x: 320
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 412
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -685,12 +685,12 @@ TextureImporter:
       name: slime_jump_16
       rect:
         serializedVersion: 2
-        x: 400
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 408
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -707,12 +707,12 @@ TextureImporter:
       name: slime_jump_17
       rect:
         serializedVersion: 2
-        x: 480
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 400
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -729,12 +729,12 @@ TextureImporter:
       name: slime_jump_18
       rect:
         serializedVersion: 2
-        x: 560
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 384
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -751,12 +751,12 @@ TextureImporter:
       name: slime_jump_19
       rect:
         serializedVersion: 2
-        x: 640
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 384
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -773,12 +773,12 @@ TextureImporter:
       name: slime_jump_20
       rect:
         serializedVersion: 2
-        x: 720
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 384
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -795,12 +795,12 @@ TextureImporter:
       name: slime_jump_21
       rect:
         serializedVersion: 2
-        x: 800
-        y: 360
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 384
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -817,12 +817,12 @@ TextureImporter:
       name: slime_jump_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 328
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -839,12 +839,12 @@ TextureImporter:
       name: slime_jump_23
       rect:
         serializedVersion: 2
-        x: 80
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 336
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -861,12 +861,12 @@ TextureImporter:
       name: slime_jump_24
       rect:
         serializedVersion: 2
-        x: 160
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 340
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -883,12 +883,12 @@ TextureImporter:
       name: slime_jump_25
       rect:
         serializedVersion: 2
-        x: 240
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 343
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -905,12 +905,12 @@ TextureImporter:
       name: slime_jump_26
       rect:
         serializedVersion: 2
-        x: 320
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 340
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -927,12 +927,12 @@ TextureImporter:
       name: slime_jump_27
       rect:
         serializedVersion: 2
-        x: 400
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 336
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -949,12 +949,12 @@ TextureImporter:
       name: slime_jump_28
       rect:
         serializedVersion: 2
-        x: 480
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 328
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -971,12 +971,12 @@ TextureImporter:
       name: slime_jump_29
       rect:
         serializedVersion: 2
-        x: 560
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 312
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -993,12 +993,12 @@ TextureImporter:
       name: slime_jump_30
       rect:
         serializedVersion: 2
-        x: 640
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 312
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1015,12 +1015,12 @@ TextureImporter:
       name: slime_jump_31
       rect:
         serializedVersion: 2
-        x: 720
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 312
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1037,12 +1037,12 @@ TextureImporter:
       name: slime_jump_32
       rect:
         serializedVersion: 2
-        x: 800
-        y: 288
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 312
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1059,12 +1059,12 @@ TextureImporter:
       name: slime_jump_33
       rect:
         serializedVersion: 2
-        x: 0
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 256
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1081,12 +1081,12 @@ TextureImporter:
       name: slime_jump_34
       rect:
         serializedVersion: 2
-        x: 80
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 264
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1103,12 +1103,12 @@ TextureImporter:
       name: slime_jump_35
       rect:
         serializedVersion: 2
-        x: 160
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 268
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1125,12 +1125,12 @@ TextureImporter:
       name: slime_jump_36
       rect:
         serializedVersion: 2
-        x: 240
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 271
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1147,12 +1147,12 @@ TextureImporter:
       name: slime_jump_37
       rect:
         serializedVersion: 2
-        x: 320
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 268
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1169,12 +1169,12 @@ TextureImporter:
       name: slime_jump_38
       rect:
         serializedVersion: 2
-        x: 400
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 264
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1191,12 +1191,12 @@ TextureImporter:
       name: slime_jump_39
       rect:
         serializedVersion: 2
-        x: 480
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 256
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1213,12 +1213,12 @@ TextureImporter:
       name: slime_jump_40
       rect:
         serializedVersion: 2
-        x: 560
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 240
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1235,12 +1235,12 @@ TextureImporter:
       name: slime_jump_41
       rect:
         serializedVersion: 2
-        x: 640
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 240
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1257,12 +1257,12 @@ TextureImporter:
       name: slime_jump_42
       rect:
         serializedVersion: 2
-        x: 720
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 240
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1279,12 +1279,12 @@ TextureImporter:
       name: slime_jump_43
       rect:
         serializedVersion: 2
-        x: 800
-        y: 216
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 240
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1301,12 +1301,12 @@ TextureImporter:
       name: slime_jump_44
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 184
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1323,12 +1323,12 @@ TextureImporter:
       name: slime_jump_45
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 192
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1345,12 +1345,12 @@ TextureImporter:
       name: slime_jump_46
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 196
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1367,12 +1367,12 @@ TextureImporter:
       name: slime_jump_47
       rect:
         serializedVersion: 2
-        x: 240
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 199
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1389,12 +1389,12 @@ TextureImporter:
       name: slime_jump_48
       rect:
         serializedVersion: 2
-        x: 320
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 196
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1411,12 +1411,12 @@ TextureImporter:
       name: slime_jump_49
       rect:
         serializedVersion: 2
-        x: 400
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 192
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1433,12 +1433,12 @@ TextureImporter:
       name: slime_jump_50
       rect:
         serializedVersion: 2
-        x: 480
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 184
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1455,12 +1455,12 @@ TextureImporter:
       name: slime_jump_51
       rect:
         serializedVersion: 2
-        x: 560
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 168
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1477,12 +1477,12 @@ TextureImporter:
       name: slime_jump_52
       rect:
         serializedVersion: 2
-        x: 640
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 168
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1499,12 +1499,12 @@ TextureImporter:
       name: slime_jump_53
       rect:
         serializedVersion: 2
-        x: 720
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 168
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1521,12 +1521,12 @@ TextureImporter:
       name: slime_jump_54
       rect:
         serializedVersion: 2
-        x: 800
-        y: 144
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 168
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1543,12 +1543,12 @@ TextureImporter:
       name: slime_jump_55
       rect:
         serializedVersion: 2
-        x: 0
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 112
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1565,12 +1565,12 @@ TextureImporter:
       name: slime_jump_56
       rect:
         serializedVersion: 2
-        x: 80
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 120
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1587,12 +1587,12 @@ TextureImporter:
       name: slime_jump_57
       rect:
         serializedVersion: 2
-        x: 160
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 124
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1609,12 +1609,12 @@ TextureImporter:
       name: slime_jump_58
       rect:
         serializedVersion: 2
-        x: 240
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 127
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1631,12 +1631,12 @@ TextureImporter:
       name: slime_jump_59
       rect:
         serializedVersion: 2
-        x: 320
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 124
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1653,12 +1653,12 @@ TextureImporter:
       name: slime_jump_60
       rect:
         serializedVersion: 2
-        x: 400
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 120
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1675,12 +1675,12 @@ TextureImporter:
       name: slime_jump_61
       rect:
         serializedVersion: 2
-        x: 480
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 112
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1697,12 +1697,12 @@ TextureImporter:
       name: slime_jump_62
       rect:
         serializedVersion: 2
-        x: 560
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 96
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1719,12 +1719,12 @@ TextureImporter:
       name: slime_jump_63
       rect:
         serializedVersion: 2
-        x: 640
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 96
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1741,12 +1741,12 @@ TextureImporter:
       name: slime_jump_64
       rect:
         serializedVersion: 2
-        x: 720
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 96
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1763,12 +1763,12 @@ TextureImporter:
       name: slime_jump_65
       rect:
         serializedVersion: 2
-        x: 800
-        y: 72
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 96
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1785,12 +1785,12 @@ TextureImporter:
       name: slime_jump_66
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 187
+        y: 40
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1807,12 +1807,12 @@ TextureImporter:
       name: slime_jump_67
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 266
+        y: 48
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1829,12 +1829,12 @@ TextureImporter:
       name: slime_jump_68
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 344
+        y: 52
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1851,12 +1851,12 @@ TextureImporter:
       name: slime_jump_69
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 423
+        y: 55
+        width: 21
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1873,12 +1873,12 @@ TextureImporter:
       name: slime_jump_70
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 504
+        y: 52
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1895,12 +1895,12 @@ TextureImporter:
       name: slime_jump_71
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 586
+        y: 48
+        width: 15
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1917,12 +1917,12 @@ TextureImporter:
       name: slime_jump_72
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 667
+        y: 40
+        width: 13
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1939,12 +1939,12 @@ TextureImporter:
       name: slime_jump_73
       rect:
         serializedVersion: 2
-        x: 560
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 24
+        y: 24
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1961,12 +1961,12 @@ TextureImporter:
       name: slime_jump_74
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 24
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1983,12 +1983,12 @@ TextureImporter:
       name: slime_jump_75
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 742
+        y: 24
+        width: 23
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2005,12 +2005,12 @@ TextureImporter:
       name: slime_jump_76
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 80
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 824
+        y: 24
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2037,7 +2037,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":7.0},"gridSpriteSize":{"x":80.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       slime_jump_0: 3392966208300966758
       slime_jump_1: -7020169640972223087
