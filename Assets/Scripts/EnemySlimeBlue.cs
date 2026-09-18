@@ -70,27 +70,26 @@ public class EnemySlimeBlue : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("EnemyBlock") || other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("EnemyBlock") || other.gameObject.CompareTag("Enemy"))
         {
             moveSpeed = -moveSpeed;
         }
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             if (other.transform.transform.position.y > transform.position.y + slimeHeight)
             {
                 return;
             }
-        other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageGiven);
-        }
-        
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageGiven);
 
-        if(other.transform.position.x > transform.position.x)
-        {
-            other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(knockbackForce, upwardsForce);
-        }
-        else
-        {
-            other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(-knockbackForce, upwardsForce);
+            if (other.transform.position.x > transform.position.x)
+            {
+                other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(knockbackForce, upwardsForce);
+            }
+            else
+            {
+                other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(-knockbackForce, upwardsForce);
+            }
         }
     }
 

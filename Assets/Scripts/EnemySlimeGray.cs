@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class EnemySlimeGray : MonoBehaviour
@@ -11,7 +12,6 @@ public class EnemySlimeGray : MonoBehaviour
     [SerializeField] private int damageGiven = 1;
     [SerializeField] private float slimeHeight;
     [SerializeField] private GameObject slimeDrop;
-    [SerializeField] private Transform feet;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float raycastDistance = 1f;
     private SpriteRenderer rend;
@@ -51,7 +51,7 @@ public class EnemySlimeGray : MonoBehaviour
             {
                 Vector2 direction = (target.position - transform.position).normalized;
                 moveDirection = direction;
-                rgbd.linearVelocity = new Vector2(moveDirection.x, 0) * moveSpeed;
+                rgbd.linearVelocity = new Vector2(moveDirection.x * moveSpeed, rgbd.linearVelocity.y);
                 if(isGrounded)
                 {
                     RaycastHit2D groundInFront = Physics2D.Raycast(transform.position, new Vector2(playerDirection, 0), 2f, whatIsGround);
@@ -94,7 +94,13 @@ public class EnemySlimeGray : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        if (isGrounded && shouldJump)
+        {
+            shouldJump = false;
+            Vector2 jumpDirection = (target.position - transform.position).normalized;
+            rgbd.AddForce(new Vector2(jumpDirection.x, jumpForce), ForceMode2D.Impulse);
+
+        } 
     }
 
 
@@ -111,14 +117,17 @@ public class EnemySlimeGray : MonoBehaviour
                 return;
             }
         other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageGiven);
-        }      
-        if(other.transform.position.x > transform.position.x)
-        {
-            other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(knockbackForce, upwardsForce);
         }
-        else
+        if (other.gameObject.GetComponent<PlayerMovement>() != null)
         {
-            other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(-knockbackForce, upwardsForce);
+            if (other.transform.position.x > transform.position.x)
+            {
+                other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(knockbackForce, upwardsForce);
+            }
+            else
+            {
+                other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(-knockbackForce, upwardsForce);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
