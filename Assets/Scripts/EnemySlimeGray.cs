@@ -13,7 +13,6 @@ public class EnemySlimeGray : MonoBehaviour
     [SerializeField] private float slimeHeight;
     [SerializeField] private GameObject slimeDrop;
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private float raycastDistance = 1f;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
