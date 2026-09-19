@@ -1,25 +1,32 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.U2D;
 
 public class EnemyBossProjectiles : MonoBehaviour
 {
     private Rigidbody2D rgbd;
-    private SpriteRenderer rend;
     private float timer;
-    private GameObject player;
 
+    private bool spawnImmunity = true;
     [SerializeField] private float projectileSpeed;
     [SerializeField] private float projectileHeight;
 
 
     private void Start()
     {
-        rend = GetComponent<SpriteRenderer>();
         rgbd = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        StartCoroutine(disableSpawnImmunity());
+  
     }
 
-    
+
+        
+        
+    private IEnumerator disableSpawnImmunity()
+    {
+        yield return new WaitForSeconds(0.2f);
+        spawnImmunity = false;
+    }
     private void Update()
     {
         timer += Time.deltaTime;
@@ -28,11 +35,13 @@ public class EnemyBossProjectiles : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if (spawnImmunity == true) return;
         if(other.gameObject.CompareTag("BossEnemy"))
         {
             Destroy(gameObject);
         }
     }
+
 }
