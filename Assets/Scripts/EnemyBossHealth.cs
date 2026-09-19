@@ -50,7 +50,8 @@ public class EnemyBossHealth : MonoBehaviour
         Instantiate(itemDrop, (Vector2)transform.position + new Vector2(0f, 2f), Quaternion.identity);
         Destroy(gameObject);
     }
-    private void OnCollisionEnter2D(Collision2D other)
+ 
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!canTakeDamage) return;
         if (other.gameObject.CompareTag("Player"))
@@ -63,6 +64,5 @@ public class EnemyBossHealth : MonoBehaviour
             }
         }
     }
-
 
 }

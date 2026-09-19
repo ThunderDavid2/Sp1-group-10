@@ -12,9 +12,8 @@ public class EnemyBossMovement : MonoBehaviour
     [SerializeField] private float knockbackForce;
     [SerializeField] private float upwardsForce;
     [SerializeField] private int damageGiven = 1;
-    [SerializeField] private float slimeHeight;
-    [SerializeField] private GameObject slimeDrop;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private float slimeHeight;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
@@ -99,8 +98,7 @@ public class EnemyBossMovement : MonoBehaviour
             if(rgbd != null)
             {
                 rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0);
-                rgbd.AddForce(new Vector2(0, bounciness));
-            }
+                rgbd.AddForce(new Vector2(0, bounciness));            }
         }
     }
 
