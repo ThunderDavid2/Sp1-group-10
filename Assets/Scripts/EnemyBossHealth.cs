@@ -23,6 +23,7 @@ public class EnemyBossHealth : MonoBehaviour
         currentEnemyHealth -= damage;
         anim.SetTrigger("Damage");
         UpdateBossHealthColor();
+        GetComponent<BossDamagedProjectile>().Damaged();
         if(currentEnemyHealth <= 0)
         {
             anim.SetTrigger("Death");
