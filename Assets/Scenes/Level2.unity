@@ -680,7 +680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00095020b8491784980aaa332469667b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBossMovement
-  moveSpeed: 1
+  lowHealthMoveSpeed: 0
+  criticalHealthMoveSpeed: 0
   jumpForce: 10
   bounciness: 1000
   knockbackForce: 500
@@ -798,6 +799,9 @@ MonoBehaviour:
   slimeHeight: 2.3
   lowHealthColor: {r: 1, g: 0, b: 0, a: 1}
   criticalHealthColor: {r: 1, g: 0, b: 0.18188846, a: 1}
+  moveSpeed: 1
+  lowHealthMoveSpeed: 3
+  criticalHealthMoveSpeed: 5
   itemDrop: {fileID: 7810298314740993299, guid: 3a4ea76bf8e60404487a1a4e701f7560, type: 3}
   enemySprite: {fileID: 13309666}
 --- !u!50 &13309672

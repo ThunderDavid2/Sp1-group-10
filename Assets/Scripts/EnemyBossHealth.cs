@@ -6,6 +6,7 @@ public class EnemyBossHealth : MonoBehaviour
     [SerializeField] private int startingHealth = 10;
     [SerializeField] private float slimeHeight;
     [SerializeField] private Color lowHealthColor, criticalHealthColor;
+    [SerializeField] private float moveSpeed, lowHealthMoveSpeed, criticalHealthMoveSpeed;
     [SerializeField] private GameObject itemDrop;
     [SerializeField] private SpriteRenderer enemySprite;
     private Animator anim;
@@ -36,13 +37,15 @@ public class EnemyBossHealth : MonoBehaviour
     }
     private void UpdateBossHealthColor()
     {
-        if(currentEnemyHealth <= 5)
+        if(currentEnemyHealth <= 3)
         {
             enemySprite.color = lowHealthColor;
+            moveSpeed = lowHealthMoveSpeed;
         }
-        if(currentEnemyHealth <= 2)
+        if(currentEnemyHealth <= 1)
         {
             enemySprite.color = criticalHealthColor;
+            moveSpeed = criticalHealthMoveSpeed;
         }
     }
     private void Death()
@@ -64,5 +67,7 @@ public class EnemyBossHealth : MonoBehaviour
             }
         }
     }
+
+    public float GetBossMovementSpeed() { return moveSpeed; }
 
 }

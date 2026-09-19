@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class EnemyBossMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float bounciness;
     [SerializeField] private float knockbackForce;
@@ -23,7 +22,7 @@ public class EnemyBossMovement : MonoBehaviour
     private int jumpTime;
     private bool isGrounded;
     private float distance;
-
+    private float moveSpeed;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -31,6 +30,7 @@ public class EnemyBossMovement : MonoBehaviour
         rgbd = GetComponent<Rigidbody2D>();
         target = GameObject.Find("Player").transform;
         jumpTime = Random.Range(1, 10);
+        
     }
     private void Update()
     {
@@ -54,7 +54,9 @@ public class EnemyBossMovement : MonoBehaviour
                 rend.flipX = false;
             }
         }
+        moveSpeed = GetComponent<EnemyBossHealth>().GetBossMovementSpeed();
     }
+
     private void FixedUpdate()
     {
         if (distance < 40 && isGrounded && timer > jumpTime)
@@ -66,6 +68,7 @@ public class EnemyBossMovement : MonoBehaviour
         }
             
     }
+  
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Player"))
@@ -101,6 +104,5 @@ public class EnemyBossMovement : MonoBehaviour
                 rgbd.AddForce(new Vector2(0, bounciness));            }
         }
     }
-
 
 }
