@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
 
     [SerializeField] private InputActionReference run;
+    [SerializeField] private InputActionReference blink;
   
     private float moveDirection;
     // Sparar input från spelaren
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 200f;
     // Kraften som skickas upp i ett hopp
     [SerializeField] private float runSpeed = 2f;
+    [SerializeField] private float blinkForce = 5000f;
+    
     
     [SerializeField] private Transform leftFoot, rightFoot;
     [SerializeField] private LayerMask whatIsGround;
@@ -49,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         jump.action.started += Jump;
+        blink.action.started += Blink;
 
 
     }   
@@ -103,6 +107,8 @@ public void PlayerDamage()
     private void OnDisable()
     {
         jump.action.started -= Jump;
+        blink.action.started -= Blink;
+        
     }
     // Fix för att karaktären inte ska hoppa högre varje gång spelet startas
 
@@ -123,6 +129,11 @@ public void PlayerDamage()
         {
            PerformJump();
            hasJumped = false;
+        }
+        else if (isOnWall())
+        {
+            PerformJump();
+           //hasJumped = true;
         }
     }
 
@@ -188,11 +199,25 @@ public void PlayerDamage()
     private void Glide()
 {
   
-    if (isOnWall() && rgbd.linearVelocity.y < -0.3f)
-    {
-        rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, -0.3f);
+        if (isOnWall() && rgbd.linearVelocity.y < -0.3f)
+        {
+            rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, -0.3f);
+        }
+    
     }
-}
+    
+    private void Blink(InputAction.CallbackContext context)
+    {
+        if (rend.flipX)
+        {
+            rgbd.AddForce( new Vector2(-blinkForce, 0));
+        }
+        else
+        {
+            rgbd.AddForce( new Vector2(blinkForce, 0));
+        }
+
+    }
 
 
 }

@@ -69652,9 +69652,11 @@ MonoBehaviour:
   move: {fileID: -3273033918501402985, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   jump: {fileID: 517864120608272342, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   run: {fileID: 5751346749685452847, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
+  blink: {fileID: -8866190065069644900, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   moveSpeed: 3
   jumpForce: 1000
   runSpeed: 6
+  blinkForce: 5000
   leftFoot: {fileID: 171486152}
   rightFoot: {fileID: 1673940020}
   whatIsGround:
