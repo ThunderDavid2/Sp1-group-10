@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3057589805105080550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320863487189579250}
+  m_Layer: 0
+  m_Name: ShockwavePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1320863487189579250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057589805105080550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1227613019324312014}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4131573936971510006
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,6 +133,7 @@ Transform:
   m_Children:
   - {fileID: 5171192338980274208}
   - {fileID: 6145327667537488253}
+  - {fileID: 1320863487189579250}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &410940325015231102
@@ -292,13 +324,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBossMovement
   jumpForce: 10
   bounciness: 1000
-  knockbackForce: 500
+  knockbackForce: 1000
   upwardsForce: 500
   damageGiven: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   slimeHeight: 2.3
+  shockwaveObjectRight: {fileID: 1885279686397859569, guid: 4035424df21c7aa4892e46127c8b0d7f, type: 3}
+  shockwaveObjectLeft: {fileID: 8591125508764725760, guid: e63077461bcde3944a2c77ce4758061a, type: 3}
+  shockwavePos: {fileID: 1320863487189579250}
 --- !u!114 &2431748622063354614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,14 +348,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBossHealth
   startingHealth: 5
   slimeHeight: 2.3
-  lowHealthColor: {r: 1, g: 0, b: 0, a: 1}
-  criticalHealthColor: {r: 1, g: 0, b: 0.18188846, a: 1}
+  lowHealthColor: {r: 1, g: 0.2636534, b: 0, a: 1}
+  criticalHealthColor: {r: 0.8616352, g: 0.029804891, b: 0.1791076, a: 1}
   moveSpeed: 1
+  normalMoveSpeed: 1
   lowHealthMoveSpeed: 3
   criticalHealthMoveSpeed: 5
+  lowHealthSize: 0
+  criticalHealthSize: 0
   itemDrop: {fileID: 7810298314740993299, guid: 3a4ea76bf8e60404487a1a4e701f7560, type: 3}
   enemySprite: {fileID: 410940325015231102}
   currentEnemyHealth: 0
+  healingPickups: 0
 --- !u!50 &2901893347041949069
 Rigidbody2D:
   serializedVersion: 5
@@ -345,8 +384,8 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1643938158437660619
 MonoBehaviour:

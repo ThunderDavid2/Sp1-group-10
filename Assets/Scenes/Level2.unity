@@ -4619,6 +4619,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &74539502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74539503}
+  m_Layer: 0
+  m_Name: ShockwavePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74539503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74539502}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 610710508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &75165332
 GameObject:
   m_ObjectHideFlags: 0
@@ -28758,6 +28789,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 584905084300582466, guid: db7076ee8b3f21a42a9433d7e7b4bc0d, type: 3}
   m_PrefabInstance: {fileID: 609585924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &610710508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227613019324312014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+  m_PrefabInstance: {fileID: 8335181876968817220}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &614990902
 GameObject:
@@ -95501,11 +95537,11 @@ PrefabInstance:
       objectReference: {fileID: 1710880175}
     - target: {fileID: 852993416708054241, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.4
+      value: -40.35
       objectReference: {fileID: 0}
     - target: {fileID: 852993416708054241, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 852993416708054241, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: m_LocalPosition.z
@@ -95685,41 +95721,44 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: normalMoveSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: lowHealthColor.b
+    - target: {fileID: 2901893347041949069, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: m_SleepingMode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: lowHealthColor.g
-      value: 0.2636534
-      objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: lowHealthColor.r
+    - target: {fileID: 2901893347041949069, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: criticalHealthColor.b
-      value: 0.1791076
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: shockwavePos
+      value: 
+      objectReference: {fileID: 74539503}
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: knockbackForce
+      value: 1000
       objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: criticalHealthColor.g
-      value: 0.029804891
-      objectReference: {fileID: 0}
-    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: criticalHealthColor.r
-      value: 0.8616352
-      objectReference: {fileID: 0}
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: shockwaveObject
+      value: 
+      objectReference: {fileID: 1885279686397859569, guid: 4035424df21c7aa4892e46127c8b0d7f, type: 3}
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: shockwaveObjectLeft
+      value: 
+      objectReference: {fileID: 8591125508764725760, guid: e63077461bcde3944a2c77ce4758061a, type: 3}
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: shockwaveObjectRight
+      value: 
+      objectReference: {fileID: 1885279686397859569, guid: 4035424df21c7aa4892e46127c8b0d7f, type: 3}
     - target: {fileID: 9097622687394325014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
       propertyPath: m_Name
       value: BossSlime
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1227613019324312014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 74539503}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
 --- !u!1660057539 &9223372036854775807

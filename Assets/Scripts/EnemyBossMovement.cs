@@ -13,6 +13,8 @@ public class EnemyBossMovement : MonoBehaviour
     [SerializeField] private int damageGiven = 1;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float slimeHeight;
+    [SerializeField] private GameObject shockwaveObjectRight, shockwaveObjectLeft;
+    [SerializeField] private Transform shockwavePos;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
@@ -24,6 +26,7 @@ public class EnemyBossMovement : MonoBehaviour
     private float distance;
     private float moveSpeed;
     private int health;
+    private bool hasJumped = false;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -56,6 +59,7 @@ public class EnemyBossMovement : MonoBehaviour
         }
         moveSpeed = GetComponent<EnemyBossHealth>().GetBossMovementSpeed();
         health = GetComponent<EnemyBossHealth>().GetBossCurrentHealth();
+        Shockwave();
     }
 
     private void FixedUpdate()
@@ -64,6 +68,7 @@ public class EnemyBossMovement : MonoBehaviour
         {
             anim.SetTrigger("Jump");
             rgbd.AddForce(new Vector2(rgbd.linearVelocity.x, jumpForce), ForceMode2D.Impulse);
+            Invoke(nameof(HasJumped), 1f);
             timer = 0;
             if (health >= 4)
             {
@@ -79,6 +84,19 @@ public class EnemyBossMovement : MonoBehaviour
             }
         }
             
+    }
+    private void HasJumped()
+    {
+        hasJumped = true;
+    }
+    private void Shockwave()
+    {
+        if(hasJumped == true && isGrounded == true)
+        {
+            hasJumped = false;
+            Instantiate(shockwaveObjectRight, shockwavePos.position, Quaternion.identity);
+            Instantiate(shockwaveObjectLeft, shockwavePos.position, Quaternion.identity);
+        }
     }
   
     private void OnCollisionEnter2D(Collision2D other)
