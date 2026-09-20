@@ -15,6 +15,7 @@ public class EnemyBossMovement : MonoBehaviour
     [SerializeField] private float slimeHeight;
     [SerializeField] private GameObject shockwaveObjectRight, shockwaveObjectLeft;
     [SerializeField] private Transform shockwavePos;
+    [SerializeField] private ParticleSystem landParticleSystem;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
@@ -105,6 +106,7 @@ public class EnemyBossMovement : MonoBehaviour
             hasJumped = false;
             Instantiate(shockwaveObjectRight, shockwavePos.position, Quaternion.Euler(0, 0, 45));
             Instantiate(shockwaveObjectLeft, shockwavePos.position, Quaternion.Euler(0, 0, -45));
+            landParticleSystem.Play();
         }
     }
   

@@ -1652,6 +1652,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1001 &27993859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 610710508}
+    m_Modifications:
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4578421551333641189, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: stopAction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855881703568403267, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_Name
+      value: BossLandingParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d29003d7fd0de52458c468326d21db37, type: 3}
 --- !u!1 &28231026
 GameObject:
   m_ObjectHideFlags: 0
@@ -28759,6 +28820,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 584905084300582466, guid: db7076ee8b3f21a42a9433d7e7b4bc0d, type: 3}
   m_PrefabInstance: {fileID: 609585924}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &610710508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227613019324312014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+  m_PrefabInstance: {fileID: 8335181876968817220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614990902
 GameObject:
   m_ObjectHideFlags: 0
@@ -44573,6 +44639,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!4 &944800531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+  m_PrefabInstance: {fileID: 27993859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &944800533 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4578421551333641189, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+  m_PrefabInstance: {fileID: 27993859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &945145149
 GameObject:
   m_ObjectHideFlags: 0
@@ -95685,33 +95761,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1320863487189579250, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.2
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: particlePos
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3057589805105080550, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4131573936971510006, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4199508047103709821, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: landParticles
+      value: 
+      objectReference: {fileID: 4578421551333641189, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+    - target: {fileID: 7778942679277246976, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: landParticleSystem
+      value: 
+      objectReference: {fileID: 944800533}
     - target: {fileID: 9097622687394325014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
       propertyPath: m_Name
       value: BossSlime
       objectReference: {fileID: 0}
-    - target: {fileID: 9097622687394325014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1227613019324312014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 944800531}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
 --- !u!1660057539 &9223372036854775807

@@ -134,6 +134,7 @@ Transform:
   - {fileID: 5171192338980274208}
   - {fileID: 6145327667537488253}
   - {fileID: 1320863487189579250}
+  - {fileID: 3352320478459270413}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &410940325015231102
@@ -334,6 +335,7 @@ MonoBehaviour:
   shockwaveObjectRight: {fileID: 1885279686397859569, guid: 4035424df21c7aa4892e46127c8b0d7f, type: 3}
   shockwaveObjectLeft: {fileID: 8591125508764725760, guid: e63077461bcde3944a2c77ce4758061a, type: 3}
   shockwavePos: {fileID: 1320863487189579250}
+  landParticleSystem: {fileID: 2269095544997347193}
 --- !u!114 &2431748622063354614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,3 +417,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttacks
   bullet: {fileID: 7803517768336096875, guid: 6e47bf437d732f44c9522d706bc5046b, type: 3}
   bulletPos: {fileID: 6145327667537488253}
+--- !u!1001 &2374699121605932188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1227613019324312014}
+    m_Modifications:
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855881703568403267, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+      propertyPath: m_Name
+      value: BossLandingParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+--- !u!198 &2269095544997347193 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4578421551333641189, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+  m_PrefabInstance: {fileID: 2374699121605932188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3352320478459270413 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1040742672418333073, guid: d29003d7fd0de52458c468326d21db37, type: 3}
+  m_PrefabInstance: {fileID: 2374699121605932188}
+  m_PrefabAsset: {fileID: 0}
