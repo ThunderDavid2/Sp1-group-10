@@ -95686,6 +95686,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: normalMoveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
       propertyPath: lowHealthColor.b
       value: 0
       objectReference: {fileID: 0}

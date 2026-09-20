@@ -23,14 +23,14 @@ public class EnemyBossMovement : MonoBehaviour
     private bool isGrounded;
     private float distance;
     private float moveSpeed;
+    private int health;
     private void Start()
     {
         anim = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
         rgbd = GetComponent<Rigidbody2D>();
         target = GameObject.Find("Player").transform;
-        jumpTime = Random.Range(1, 10);
-        
+        jumpTime = Random.Range(1, 10);      
     }
     private void Update()
     {
@@ -55,6 +55,7 @@ public class EnemyBossMovement : MonoBehaviour
             }
         }
         moveSpeed = GetComponent<EnemyBossHealth>().GetBossMovementSpeed();
+        health = GetComponent<EnemyBossHealth>().GetBossCurrentHealth();
     }
 
     private void FixedUpdate()
@@ -64,7 +65,18 @@ public class EnemyBossMovement : MonoBehaviour
             anim.SetTrigger("Jump");
             rgbd.AddForce(new Vector2(rgbd.linearVelocity.x, jumpForce), ForceMode2D.Impulse);
             timer = 0;
-            jumpTime = Random.Range(1, 10);
+            if (health >= 4)
+            {
+                jumpTime = Random.Range(1, 10);
+            }
+            else if(health <=3)
+            {
+                jumpTime = Random.Range(1, 6);
+            }
+            else if(health == 1)
+            {
+                jumpTime = Random.Range(1, 3);
+            }
         }
             
     }

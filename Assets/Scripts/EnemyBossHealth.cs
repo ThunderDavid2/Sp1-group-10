@@ -122,5 +122,6 @@ public class EnemyBossHealth : MonoBehaviour
    
 
     public float GetBossMovementSpeed() { return moveSpeed; }
+    public int GetBossCurrentHealth() { return currentEnemyHealth; }
 
 }
