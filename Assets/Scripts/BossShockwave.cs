@@ -6,6 +6,8 @@ public class BossShockwave : MonoBehaviour
     private SpriteRenderer rend;
     private float timer;
 
+
+    [SerializeField] private float knockbackForce, upwardsForce;
     [SerializeField] private float shockwaveSpeed;
 
     private void Start()
@@ -17,14 +19,6 @@ public class BossShockwave : MonoBehaviour
 
     private void Update()
     {
-        if(shockwaveSpeed <0)
-        {
-            rend.flipX = true;
-        }
-        else
-        {
-            rend.flipX = false;
-        }
         timer += Time.deltaTime;
         if(timer >= 1)
         {
@@ -33,10 +27,20 @@ public class BossShockwave : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
-            Destroy(gameObject);
+        }
+        if (other.gameObject.GetComponent<PlayerMovement>() != null)
+        {
+            if (other.transform.position.x > transform.position.x)
+            {
+                other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(knockbackForce, upwardsForce);
+            }
+            else
+            {
+                other.gameObject.GetComponent<PlayerMovement>().TakeKnockback(-knockbackForce, upwardsForce);
+            }
         }
     }
 }
