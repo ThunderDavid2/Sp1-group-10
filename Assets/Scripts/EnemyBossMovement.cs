@@ -16,6 +16,7 @@ public class EnemyBossMovement : MonoBehaviour
     [SerializeField] private GameObject shockwaveObjectRight, shockwaveObjectLeft;
     [SerializeField] private Transform shockwavePos;
     [SerializeField] private ParticleSystem landParticleSystem;
+    [SerializeField] private AudioClip landingSound, jumpSound;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
@@ -29,13 +30,15 @@ public class EnemyBossMovement : MonoBehaviour
     private int health;
     private float airTime;
     private bool hasJumped = false;
+    private AudioSource audioSource;
     private void Start()
     {
         anim = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
         rgbd = GetComponent<Rigidbody2D>();
         target = GameObject.Find("Player").transform;
-        jumpTime = Random.Range(1, 10);      
+        jumpTime = Random.Range(1, 10);
+        audioSource = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -82,6 +85,7 @@ public class EnemyBossMovement : MonoBehaviour
         if (distance < 40 && isGrounded && timer > jumpTime)
         {
             anim.SetTrigger("Jump");
+            audioSource.PlayOneShot(jumpSound);
             rgbd.AddForce(new Vector2(rgbd.linearVelocity.x, jumpForce), ForceMode2D.Impulse);
             timer = 0;
             if (health >= 4)
@@ -107,6 +111,7 @@ public class EnemyBossMovement : MonoBehaviour
             Instantiate(shockwaveObjectRight, shockwavePos.position, Quaternion.Euler(0, 0, 45));
             Instantiate(shockwaveObjectLeft, shockwavePos.position, Quaternion.Euler(0, 0, -45));
             landParticleSystem.Play();
+            audioSource.PlayOneShot(landingSound);
         }
     }
   
