@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Xml;
 using Unity.VisualScripting;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class EnemyBossHealth : MonoBehaviour
@@ -8,7 +9,7 @@ public class EnemyBossHealth : MonoBehaviour
     [SerializeField] private int startingHealth = 10;
     [SerializeField] private float slimeHeight;
     [SerializeField] private Color lowHealthColor, criticalHealthColor;
-    [SerializeField] private float moveSpeed, lowHealthMoveSpeed, criticalHealthMoveSpeed;
+    [SerializeField] private float moveSpeed, normalMoveSpeed, lowHealthMoveSpeed, criticalHealthMoveSpeed;
     [SerializeField] private float lowHealthSize, criticalHealthSize;
     [SerializeField] private GameObject itemDrop;
     [SerializeField] private SpriteRenderer enemySprite;
@@ -16,6 +17,8 @@ public class EnemyBossHealth : MonoBehaviour
     private bool canTakeDamage = true;
     [SerializeField] private int currentEnemyHealth;
     [SerializeField] private int healingPickups;
+    private bool lowHealth = false;
+    private bool criticalHealth = false;
 
     private void Start()
     {
@@ -45,15 +48,19 @@ public class EnemyBossHealth : MonoBehaviour
     private void UpdateBossSize()
     {
         if(currentEnemyHealth == 3)
-        {
-            transform.localScale -= new Vector3(1, 1, 1);
-            slimeHeight = slimeHeight - 0.46f;
-        }
-        if(currentEnemyHealth == 1)
-        {
-            transform.localScale -= new Vector3(1, 1, 1);
-            slimeHeight = slimeHeight - 0.46f;
-        }
+            if(lowHealth == false)
+            {
+                transform.localScale -= new Vector3(1, 1, 1);
+                slimeHeight = slimeHeight - 0.46f;
+                lowHealth = true;
+            }
+        if (currentEnemyHealth == 1)
+            if (criticalHealth == false)
+            {
+                transform.localScale -= new Vector3(1, 1, 1);
+                slimeHeight = slimeHeight - 0.46f;
+                criticalHealth = true;
+            }
     }
     public void Healing()
     {
@@ -62,6 +69,20 @@ public class EnemyBossHealth : MonoBehaviour
         {
             currentEnemyHealth += 1;
             healingPickups = 0;
+            if(currentEnemyHealth == 4)
+            {
+                transform.localScale += new Vector3(1, 1, 1);
+                lowHealth = false;
+                moveSpeed = normalMoveSpeed;
+                
+            }
+            if(currentEnemyHealth == 2)
+            {
+                enemySprite.color = lowHealthColor;
+                transform.localScale += new Vector3(1, 1, 1);
+                criticalHealth = false;
+                moveSpeed = lowHealthMoveSpeed;
+            }
         }
        
     }

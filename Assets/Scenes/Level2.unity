@@ -95685,6 +95685,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: lowHealthColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: lowHealthColor.g
+      value: 0.2636534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: lowHealthColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: criticalHealthColor.b
+      value: 0.1791076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: criticalHealthColor.g
+      value: 0.029804891
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431748622063354614, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
+      propertyPath: criticalHealthColor.r
+      value: 0.8616352
+      objectReference: {fileID: 0}
     - target: {fileID: 9097622687394325014, guid: 9084dc913ab43ae4ca38421344532204, type: 3}
       propertyPath: m_Name
       value: BossSlime
