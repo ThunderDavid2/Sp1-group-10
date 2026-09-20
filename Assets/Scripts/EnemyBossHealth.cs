@@ -1,4 +1,6 @@
 using JetBrains.Annotations;
+using System.Xml;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyBossHealth : MonoBehaviour
@@ -7,11 +9,13 @@ public class EnemyBossHealth : MonoBehaviour
     [SerializeField] private float slimeHeight;
     [SerializeField] private Color lowHealthColor, criticalHealthColor;
     [SerializeField] private float moveSpeed, lowHealthMoveSpeed, criticalHealthMoveSpeed;
+    [SerializeField] private float lowHealthSize, criticalHealthSize;
     [SerializeField] private GameObject itemDrop;
     [SerializeField] private SpriteRenderer enemySprite;
     private Animator anim;
     private bool canTakeDamage = true;
-    private int currentEnemyHealth;
+    [SerializeField] private int currentEnemyHealth;
+    [SerializeField] private int healingPickups;
 
     private void Start()
     {
@@ -23,6 +27,7 @@ public class EnemyBossHealth : MonoBehaviour
         currentEnemyHealth -= damage;
         anim.SetTrigger("Damage");
         UpdateBossHealthColor();
+        UpdateBossSize();
         GetComponent<BossDamagedProjectile>().SpawnProjectiles(5);
         //GetComponent<BossDamagedProjectile>().Damaged();
         if(currentEnemyHealth <= 0)
@@ -37,12 +42,36 @@ public class EnemyBossHealth : MonoBehaviour
     {
         canTakeDamage = true;
     }
+    private void UpdateBossSize()
+    {
+        if(currentEnemyHealth == 3)
+        {
+            transform.localScale -= new Vector3(1, 1, 1);
+            slimeHeight = slimeHeight - 0.46f;
+        }
+        if(currentEnemyHealth == 1)
+        {
+            transform.localScale -= new Vector3(1, 1, 1);
+            slimeHeight = slimeHeight - 0.46f;
+        }
+    }
+    public void Healing()
+    {
+        healingPickups += 1;
+        if (healingPickups >= 5)
+        {
+            currentEnemyHealth += 1;
+            healingPickups = 0;
+        }
+       
+    }
     private void UpdateBossHealthColor()
     {
         if(currentEnemyHealth <= 3)
         {
             enemySprite.color = lowHealthColor;
             moveSpeed = lowHealthMoveSpeed;
+  
         }
         if(currentEnemyHealth <= 1)
         {
@@ -69,6 +98,7 @@ public class EnemyBossHealth : MonoBehaviour
             }
         }
     }
+   
 
     public float GetBossMovementSpeed() { return moveSpeed; }
 

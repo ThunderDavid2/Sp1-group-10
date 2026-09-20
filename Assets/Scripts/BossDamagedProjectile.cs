@@ -12,14 +12,14 @@ public class BossDamagedProjectile : MonoBehaviour
     private void Start()
     {
         radius = 5f;
-        moveSpeed = 15f;
+        moveSpeed = 10f;
     }
 
 
     public void SpawnProjectiles(int numberOfProjectiles)
     {
-        float angleStep = 360f / numberOfProjectiles;
-        float angle = 0f;
+        float angleStep = (90f - 270f) / numberOfProjectiles;
+        float angle = 90f;
         for (int i = 0; i <= numberOfProjectiles -1; i++)
         {
             float projectileDirXposition = startPoint.x + Mathf.Sin((angle * Mathf.PI) / 180) * radius;
@@ -27,6 +27,7 @@ public class BossDamagedProjectile : MonoBehaviour
 
             Vector2 projectileVector = new Vector2(projectileDirXposition, projectileDirYposition);
             Vector2 projectileMoveDirection = (projectileVector - startPoint).normalized * moveSpeed;
+
 
             var proj = Instantiate(projectile, projectilePos.position, Quaternion.identity);
             proj.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(projectileMoveDirection.x, projectileMoveDirection.y);
