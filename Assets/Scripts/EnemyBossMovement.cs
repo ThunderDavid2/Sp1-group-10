@@ -94,8 +94,8 @@ public class EnemyBossMovement : MonoBehaviour
         if(hasJumped == true && isGrounded == true)
         {
             hasJumped = false;
-            Instantiate(shockwaveObjectRight, shockwavePos.position, Quaternion.identity);
-            Instantiate(shockwaveObjectLeft, shockwavePos.position, Quaternion.identity);
+            Instantiate(shockwaveObjectRight, shockwavePos.position, Quaternion.Euler(0, 0, 45));
+            Instantiate(shockwaveObjectLeft, shockwavePos.position, Quaternion.Euler(0, 0, -45));
         }
     }
   
