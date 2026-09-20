@@ -1461,7 +1461,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_60
+      name: BrickTopLeft
       rect:
         serializedVersion: 2
         x: 272
@@ -1483,7 +1483,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_61
+      name: BrickTopMid
       rect:
         serializedVersion: 2
         x: 288
@@ -1505,7 +1505,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_62
+      name: BrickTopRight
       rect:
         serializedVersion: 2
         x: 304
@@ -1879,7 +1879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_79
+      name: BrickMidLeft
       rect:
         serializedVersion: 2
         x: 272
@@ -1901,7 +1901,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_80
+      name: BrickMid
       rect:
         serializedVersion: 2
         x: 288
@@ -1923,7 +1923,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_81
+      name: BrickMidRight
       rect:
         serializedVersion: 2
         x: 304
@@ -2187,7 +2187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_93
+      name: BrickBottomLeft
       rect:
         serializedVersion: 2
         x: 272
@@ -2209,7 +2209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_94
+      name: BrickBottomMid
       rect:
         serializedVersion: 2
         x: 288
@@ -2231,7 +2231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_95
+      name: BrickBottomRight
       rect:
         serializedVersion: 2
         x: 304
@@ -3324,6 +3324,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      BrickBottomLeft: 1891722081
+      BrickBottomMid: -1372501458
+      BrickBottomRight: 219339175
+      BrickMid: -766206417
+      BrickMidLeft: -1287006850
+      BrickMidRight: 942360350
+      BrickTopLeft: 943944643
+      BrickTopMid: 172945663
+      BrickTopRight: -807070378
       BridgeLockChecker: 271294731
       GrassBottomLeft: -334822222
       GrassBottomMid: 2097882152
@@ -3431,9 +3440,6 @@ TextureImporter:
       Terrain (16x16)_56: -1385954930
       Terrain (16x16)_57: 1696140921
       Terrain (16x16)_58: 46127653
-      Terrain (16x16)_60: 943944643
-      Terrain (16x16)_61: 172945663
-      Terrain (16x16)_62: -807070378
       Terrain (16x16)_63: 632644380
       Terrain (16x16)_64: 1393328948
       Terrain (16x16)_65: 2055203729
@@ -3446,10 +3452,7 @@ TextureImporter:
       Terrain (16x16)_75: 2065948778
       Terrain (16x16)_76: -443542334
       Terrain (16x16)_77: -770689024
-      Terrain (16x16)_79: -1287006850
       Terrain (16x16)_8: 1685935324672158413
-      Terrain (16x16)_80: -766206417
-      Terrain (16x16)_81: 942360350
       Terrain (16x16)_82: -1683506791
       Terrain (16x16)_83: 1593709580
       Terrain (16x16)_84: 1103443936
@@ -3458,9 +3461,6 @@ TextureImporter:
       Terrain (16x16)_9: 8022139226935704013
       Terrain (16x16)_90: -1954294392
       Terrain (16x16)_91: 148718539
-      Terrain (16x16)_93: 1891722081
-      Terrain (16x16)_94: -1372501458
-      Terrain (16x16)_95: 219339175
       Terrain (16x16)_96: 1037634344
       Terrain (16x16)_97: -896359553
       Terrain (16x16)_98: -1609509515
