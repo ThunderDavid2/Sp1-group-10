@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3531683774128945791}
   - component: {fileID: 8283673441556101834}
   - component: {fileID: 736444541718776485}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: SlimeBossProjectile
   m_TagString: BossProjectiles
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1320863487189579250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShockwavePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6145327667537488253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5171192338980274208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ProjectileLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 2901893347041949069}
   - component: {fileID: 1643938158437660619}
   - component: {fileID: 2672947617277334162}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BossSlime
   m_TagString: BossEnemy
   m_Icon: {fileID: 0}

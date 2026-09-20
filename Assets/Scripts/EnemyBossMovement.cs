@@ -26,6 +26,7 @@ public class EnemyBossMovement : MonoBehaviour
     private float distance;
     private float moveSpeed;
     private int health;
+    private float airTime;
     private bool hasJumped = false;
     private void Start()
     {
@@ -56,6 +57,19 @@ public class EnemyBossMovement : MonoBehaviour
             {
                 rend.flipX = false;
             }
+            if (isGrounded == false)
+            {
+                airTime += Time.deltaTime;
+                if (airTime > 1.2)
+                {
+                    hasJumped = true;
+                    airTime = 0;
+                }
+            }
+            else
+            {
+                airTime = 0;
+            }
         }
         moveSpeed = GetComponent<EnemyBossHealth>().GetBossMovementSpeed();
         health = GetComponent<EnemyBossHealth>().GetBossCurrentHealth();
@@ -68,7 +82,6 @@ public class EnemyBossMovement : MonoBehaviour
         {
             anim.SetTrigger("Jump");
             rgbd.AddForce(new Vector2(rgbd.linearVelocity.x, jumpForce), ForceMode2D.Impulse);
-            Invoke(nameof(HasJumped), 1f);
             timer = 0;
             if (health >= 4)
             {
@@ -85,13 +98,9 @@ public class EnemyBossMovement : MonoBehaviour
         }
             
     }
-    private void HasJumped()
-    {
-        hasJumped = true;
-    }
     private void Shockwave()
     {
-        if(hasJumped == true && isGrounded == true)
+        if(hasJumped && isGrounded)
         {
             hasJumped = false;
             Instantiate(shockwaveObjectRight, shockwavePos.position, Quaternion.Euler(0, 0, 45));

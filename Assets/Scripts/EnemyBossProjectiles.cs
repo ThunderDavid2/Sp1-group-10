@@ -11,12 +11,11 @@ public class EnemyBossProjectiles : MonoBehaviour
     private bool spawnImmunity = true;
     [SerializeField] private float projectileSpeed;
     [SerializeField] private float projectileHeight;
-
+  
     private void Start()
     {
         rgbd = GetComponent<Rigidbody2D>();
         StartCoroutine(disableSpawnImmunity());
-
     }
     private IEnumerator disableSpawnImmunity()
     {
@@ -33,6 +32,7 @@ public class EnemyBossProjectiles : MonoBehaviour
         }
   
     }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (spawnImmunity == true) return;
