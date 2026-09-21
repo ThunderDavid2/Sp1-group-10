@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private bool hasJumped;
     private bool onWall;
     bool running = true;
-
+    public bool unlocked = false;
 
     private AudioSource audioSource;
     private Rigidbody2D rgbd;
@@ -126,7 +126,7 @@ public void PlayerDamage()
             PerformJump();
             hasJumped = true;
         }
-        else if (hasJumped == true)
+        else if (hasJumped == true && unlocked == true)
         {
            PerformJump();
            hasJumped = false;
@@ -182,18 +182,23 @@ public void PlayerDamage()
 
     private bool isOnWall()
     {
-        
-        RaycastHit2D leftHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.left, wallDistance, whatIsGround);
-        RaycastHit2D rightHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.right, wallDistance, whatIsGround);
-        Debug.DrawRay(transform.position, Vector2.left * wallDistance, Color.cyan);
-        Debug.DrawRay(transform.position, Vector2.right * wallDistance, Color.cyan);
-        if ( leftHit || rightHit)
-        {
-            return true;
+        if (unlocked == true){
+            RaycastHit2D leftHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.left, wallDistance, whatIsGround);
+            RaycastHit2D rightHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.right, wallDistance, whatIsGround);
+            Debug.DrawRay(transform.position, Vector2.left * wallDistance, Color.cyan);
+            Debug.DrawRay(transform.position, Vector2.right * wallDistance, Color.cyan);
+            if ( leftHit || rightHit)
+            {
+                return true;
+            }
+            else
+            {
+                return false; 
+            }
         }
         else
         {
-            return false; 
+            return false;
         }
     }
 
@@ -208,14 +213,16 @@ public void PlayerDamage()
     }
     
     private void Blink(InputAction.CallbackContext context)
-    {
-        if (rend.flipX)
-        {
-            rgbd.AddForce( new Vector2(-blinkForce, 0));
-        }
-        else
-        {
-            rgbd.AddForce( new Vector2(blinkForce, 0));
+    {   
+        if (unlocked == true){
+            if (rend.flipX)
+            {
+                rgbd.AddForce( new Vector2(-blinkForce, 0));
+            }
+            else
+            {
+                rgbd.AddForce( new Vector2(blinkForce, 0));
+            }
         }
 
     }
