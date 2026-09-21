@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float wallDistance = 0.25f;
     [SerializeField] private AudioClip[] jumpSounds;
     [SerializeField] private ParticleSystem jumpParticleSystem;
+    [SerializeField] private float wallGlideSpeed = -5;
 
     private bool isRunning;
     private bool hasJumped;
@@ -199,9 +200,9 @@ public void PlayerDamage()
     private void Glide()
 {
   
-        if (isOnWall() && rgbd.linearVelocity.y < -0.3f)
+        if (isOnWall() && rgbd.linearVelocity.y < wallGlideSpeed)
         {
-            rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, -0.3f);
+            rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, wallGlideSpeed);
         }
     
     }

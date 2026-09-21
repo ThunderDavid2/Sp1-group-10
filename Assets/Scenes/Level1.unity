@@ -69670,6 +69670,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8f6e68fc7e24f8447935f0016756e6a3, type: 3}
   - {fileID: 8300000, guid: d2f0551fae647ea41bce7bb7de519075, type: 3}
   jumpParticleSystem: {fileID: 1577795090}
+  wallGlideSpeed: -5
 --- !u!114 &1217640343
 MonoBehaviour:
   m_ObjectHideFlags: 0
