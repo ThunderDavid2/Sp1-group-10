@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class IntroSceneManager : MonoBehaviour
 {
+    [SerializeField] private int levelIndex;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
