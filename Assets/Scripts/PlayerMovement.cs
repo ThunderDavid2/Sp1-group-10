@@ -36,12 +36,12 @@ public class PlayerMovement : MonoBehaviour
     bool running = true;
     public bool unlocked = false;
 
+    private bool hasBlinked = false;
     private AudioSource audioSource;
     private Rigidbody2D rgbd;
     // Fysik
     private SpriteRenderer rend; 
 
-  
     private Animator anim;
     // Animationer
 
@@ -214,7 +214,7 @@ public void PlayerDamage()
     
     private void Blink(InputAction.CallbackContext context)
     {   
-        if (unlocked == true){
+        if (unlocked == true && !hasBlinked){
             if (rend.flipX)
             {
                 rgbd.AddForce( new Vector2(-blinkForce, 0));
@@ -223,8 +223,16 @@ public void PlayerDamage()
             {
                 rgbd.AddForce( new Vector2(blinkForce, 0));
             }
+            hasBlinked = true;
+            Invoke(nameof(CanBlinkAgain), 1f);
         }
 
+
+    }
+
+    private void CanBlinkAgain()
+    {
+        hasBlinked = false;
     }
 
 
