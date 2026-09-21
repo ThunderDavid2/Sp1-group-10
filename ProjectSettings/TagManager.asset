@@ -6,6 +6,9 @@ TagManager:
   tags:
   - EnemyBlock
   - Enemy
+  - BlueSlimeEnemy
+  - BossEnemy
+  - BossProjectiles
   layers:
   - Default
   - TransparentFX
@@ -19,8 +22,8 @@ TagManager:
   - Player
   - Platform
   - Foreground
-  - 
-  - 
+  - JumpingEnemy
+  - BossProjectile
   - 
   - 
   - 
