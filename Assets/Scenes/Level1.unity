@@ -69652,21 +69652,26 @@ MonoBehaviour:
   move: {fileID: -3273033918501402985, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   jump: {fileID: 517864120608272342, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   run: {fileID: 5751346749685452847, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
+  blink: {fileID: -8866190065069644900, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   moveSpeed: 3
   jumpForce: 1000
   runSpeed: 6
+  blinkForce: 5000
   leftFoot: {fileID: 171486152}
   rightFoot: {fileID: 1673940020}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1088
   raycastDistance: 0.25
+  wallDistance: 0.5
   jumpSounds:
   - {fileID: 8300000, guid: 17ee75c669b74ec47a9483b5622a8461, type: 3}
   - {fileID: 8300000, guid: 64f653c0296826e478a1893f045cf752, type: 3}
   - {fileID: 8300000, guid: 8f6e68fc7e24f8447935f0016756e6a3, type: 3}
   - {fileID: 8300000, guid: d2f0551fae647ea41bce7bb7de519075, type: 3}
   jumpParticleSystem: {fileID: 1577795090}
+  wallGlideSpeed: -5
+  unlocked: 0
 --- !u!114 &1217640343
 MonoBehaviour:
   m_ObjectHideFlags: 0

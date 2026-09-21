@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
 
     [SerializeField] private InputActionReference run;
+    [SerializeField] private InputActionReference blink;
   
     private float moveDirection;
     // Sparar input från spelaren
@@ -18,23 +19,29 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 200f;
     // Kraften som skickas upp i ett hopp
     [SerializeField] private float runSpeed = 2f;
+    [SerializeField] private float blinkForce = 5000f;
+    
     
     [SerializeField] private Transform leftFoot, rightFoot;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float raycastDistance = 0.25f;
+    [SerializeField] private float wallDistance = 0.25f;
     [SerializeField] private AudioClip[] jumpSounds;
     [SerializeField] private ParticleSystem jumpParticleSystem;
+    [SerializeField] private float wallGlideSpeed = -5;
 
     private bool isRunning;
+    private bool hasJumped;
+    private bool onWall;
     bool running = true;
+    public bool unlocked = false;
 
-
+    private bool hasBlinked = false;
     private AudioSource audioSource;
     private Rigidbody2D rgbd;
     // Fysik
     private SpriteRenderer rend; 
 
-  
     private Animator anim;
     // Animationer
 
@@ -46,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         jump.action.started += Jump;
+        blink.action.started += Blink;
 
 
     }   
@@ -81,6 +89,7 @@ public void PlayerDamage()
         {
             FlipSprite(false);
         }
+
         // Vänder spriten baserat på vilket håll den går åt 
     }
     private void FixedUpdate()
@@ -92,13 +101,15 @@ public void PlayerDamage()
         float currentSpeed = isRunning ? runSpeed : moveSpeed;
         rgbd.linearVelocity = new Vector2(moveDirection * currentSpeed, rgbd.linearVelocity.y);
 
-
+        Glide();
         // rgbd.linearVelocity = new Vector2(moveDirection * moveSpeed * Time.deltaTime, rgbd.linearVelocity.y);
     }
 
     private void OnDisable()
     {
         jump.action.started -= Jump;
+        blink.action.started -= Blink;
+        
     }
     // Fix för att karaktären inte ska hoppa högre varje gång spelet startas
 
@@ -112,13 +123,32 @@ public void PlayerDamage()
     {
         if (CheckIsGrounded() == true)
         {
-            rgbd.AddForce(new Vector2(0, jumpForce));
-            jumpParticleSystem.Play();
-            int randomJumpSound = Random.Range(0, jumpSounds.Length);
-            audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
-
+            PerformJump();
+            hasJumped = true;
+        }
+        else if (hasJumped == true && unlocked == true)
+        {
+           PerformJump();
+           hasJumped = false;
+        }
+        else if (isOnWall())
+        {
+            PerformJump();
+           //hasJumped = true;
         }
     }
+
+    private void PerformJump()
+    {
+        rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0f);
+        rgbd.AddForce(new Vector2(0, jumpForce));
+        jumpParticleSystem.Play();
+        int randomJumpSound = Random.Range(0, jumpSounds.Length);
+        audioSource.PlayOneShot(jumpSounds[randomJumpSound]);
+
+   
+    }
+
     private bool CheckIsGrounded() 
     {
         RaycastHit2D leftHit = Physics2D.Raycast(leftFoot.position, Vector2.down, raycastDistance, whatIsGround);
@@ -148,6 +178,61 @@ public void PlayerDamage()
     private void CanMoveAgain()
     {
         running = true;
+    }
+
+    private bool isOnWall()
+    {
+        if (unlocked == true){
+            RaycastHit2D leftHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.left, wallDistance, whatIsGround);
+            RaycastHit2D rightHit = Physics2D.Raycast(rgbd.worldCenterOfMass, Vector2.right, wallDistance, whatIsGround);
+            Debug.DrawRay(transform.position, Vector2.left * wallDistance, Color.cyan);
+            Debug.DrawRay(transform.position, Vector2.right * wallDistance, Color.cyan);
+            if ( leftHit || rightHit)
+            {
+                return true;
+            }
+            else
+            {
+                return false; 
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void Glide()
+{
+  
+        if (isOnWall() && rgbd.linearVelocity.y < wallGlideSpeed)
+        {
+            rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, wallGlideSpeed);
+        }
+    
+    }
+    
+    private void Blink(InputAction.CallbackContext context)
+    {   
+        if (unlocked == true && !hasBlinked){
+            if (rend.flipX)
+            {
+                rgbd.AddForce( new Vector2(-blinkForce, 0));
+            }
+            else
+            {
+                rgbd.AddForce( new Vector2(blinkForce, 0));
+            }
+            hasBlinked = true;
+            Invoke(nameof(CanBlinkAgain), 1f);
+        }
+
+
+    }
+
+    private void CanBlinkAgain()
+    {
+        hasBlinked = false;
     }
 
 
