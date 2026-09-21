@@ -3,14 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class QuestChecker : MonoBehaviour
 {
-    [SerializeField] private GameObject panel, finishedText, unfinishedText, secretText;
+    [SerializeField] private GameObject panel, finishedText, unfinishedText, secretText, player;
     [SerializeField] private int levelIndex;
      
     private Animator anim;
-
+    private PlayerMovement playerMovement;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        playerMovement = player.GetComponent<PlayerMovement>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,6 +24,7 @@ public class QuestChecker : MonoBehaviour
                 secretText.SetActive(true);
                 anim.SetTrigger("Flag");
                 Invoke(nameof(LoadNextLevel), 10f);
+                playerMovement.unlocked = true;
                     }
             else 
             if(other.GetComponent<PlayerQuest>().GetCoins() >= other.GetComponent<PlayerQuest>().GetCoinsToCollect())
@@ -31,6 +33,7 @@ public class QuestChecker : MonoBehaviour
                 finishedText.SetActive(true);
                 anim.SetTrigger("Flag");
                 Invoke(nameof(LoadNextLevel), 3.0f);
+                playerMovement.unlocked = true;
             }
             else
             {
