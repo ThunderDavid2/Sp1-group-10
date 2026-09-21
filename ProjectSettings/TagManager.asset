@@ -9,6 +9,7 @@ TagManager:
   - BlueSlimeEnemy
   - BossEnemy
   - BossProjectiles
+  - BossRoom
   layers:
   - Default
   - TransparentFX

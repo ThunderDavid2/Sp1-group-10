@@ -12,14 +12,15 @@ public class EnemySlimeBlue : MonoBehaviour
     [SerializeField] private int damageGiven = 1;
     [SerializeField] private float slimeHeight;
     [SerializeField] private GameObject slimeDrop;
+    [SerializeField] private AudioClip slimeSquish;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
     private Transform target;
     private Vector2 moveDirection;
     private GameObject player;
- 
 
+    private AudioSource audioSource;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class EnemySlimeBlue : MonoBehaviour
         rgbd = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         target = GameObject.Find("Player").transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -39,7 +41,7 @@ public class EnemySlimeBlue : MonoBehaviour
             {
                 Vector2 direction = (target.position - transform.position).normalized;
                 moveDirection = direction;
-                rgbd.linearVelocity = new Vector2(moveDirection.x, 0) * moveSpeed;
+                rgbd.linearVelocity = new Vector2(moveDirection.x * moveSpeed, rgbd.linearVelocity.y); 
             }
             if (moveDirection.x < 0f)
             {
@@ -106,6 +108,7 @@ public class EnemySlimeBlue : MonoBehaviour
                 GetComponent<EnemyAttacks>().enabled = false;
                 GetComponent<EnemySlimeBlue>().enabled = false;
                 damageGiven = 0;
+                audioSource.PlayOneShot(slimeSquish);
                 Invoke(nameof(OnDeath), 1f);
             }
         }

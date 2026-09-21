@@ -7,16 +7,20 @@ public class EnemyAttacks : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletPos;
+    [SerializeField] private AudioClip fire;
 
     private bool hasFired = false;
     private Animator anim;
     private float timer;
     private GameObject player;
+    private AudioSource audioSource;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = 0.6f;
     }
 
     private void Update()
@@ -34,7 +38,6 @@ public class EnemyAttacks : MonoBehaviour
 
             if(timer > 2)
             {
-                
                 timer = 0;
                 hasFired = false;
                 shoot();
@@ -46,6 +49,7 @@ public class EnemyAttacks : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        audioSource.PlayOneShot(fire);
     }
     
     

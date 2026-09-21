@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
@@ -8,8 +9,8 @@ public class EnemyBullet : MonoBehaviour
     private GameObject player;
     private Rigidbody2D rgbd;
     private SpriteRenderer rend;
-
     private float timer;
+    private ParticleSystem particles;
 
     [SerializeField] private float bulletForce;
     private void Start()
@@ -23,14 +24,6 @@ public class EnemyBullet : MonoBehaviour
     }
     private void Update()
     {
-        if(bulletForce <0)
-        {
-            rend.flipX = true;
-        }
-        if(bulletForce >0)
-        {
-            rend.flipX = false;
-        }
         timer += Time.deltaTime;
 
         if(timer > 4)

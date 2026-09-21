@@ -42,7 +42,7 @@ public class EnemyBossMovement : MonoBehaviour
     }
     private void Update()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 1f, whatIsGround);
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, whatIsGround);
         distance = Vector2.Distance(transform.transform.position, target.transform.position);
         if(distance < 40)
         {
