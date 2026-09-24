@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2356213042381139986}
   m_Layer: 7
   m_Name: EnemyRanged
-  m_TagString: Enemy
+  m_TagString: RangedEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,6 +234,7 @@ MonoBehaviour:
   bullet: {fileID: 7803517768336096875, guid: 6e47bf437d732f44c9522d706bc5046b, type: 3}
   bulletPos: {fileID: 7114920361513531254}
   fire: {fileID: 8300000, guid: 931e2adc322c8524b8c520866102a30f, type: 3}
+  chargingUp: {fileID: 0}
 --- !u!114 &5003056289102766039
 MonoBehaviour:
   m_ObjectHideFlags: 0

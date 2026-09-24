@@ -9,6 +9,7 @@ public class BossRoom : MonoBehaviour
 
     [SerializeField] private GameObject blockExit;
     [SerializeField] private GameObject activateBoss;
+    [SerializeField] private AudioClip voiceActing;
     private AudioSource audioSource;
     private Rigidbody2D playerrgbd;
     
@@ -29,9 +30,9 @@ public class BossRoom : MonoBehaviour
             playerrgbd.linearDamping = 10000000000;
             other.gameObject.GetComponent<AudioSource>().Stop();
             //other.gameObject.GetComponent<Animator>().SetFloat("MoveSpeed", 0.01f);
-            audioSource.Play();
+            audioSource.PlayOneShot(voiceActing);
             GetComponent<Collider2D>().enabled = false;
-            Invoke(nameof(DisableCollider), 10f);
+            Invoke(nameof(DisableCollider), 27f);
                  }
     }
     private void DisableCollider()
@@ -40,6 +41,7 @@ public class BossRoom : MonoBehaviour
         bossRoomCanvas.SetActive(false);
         blockExit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         activateBoss.SetActive(true);
+        audioSource.Play();
     }
 
 }

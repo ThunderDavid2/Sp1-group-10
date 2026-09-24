@@ -334,6 +334,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   slimeHeight: 2.3
+  bossHealthBar: {fileID: 0}
   shockwaveObjectRight: {fileID: 1885279686397859569, guid: 4035424df21c7aa4892e46127c8b0d7f, type: 3}
   shockwaveObjectLeft: {fileID: 8591125508764725760, guid: e63077461bcde3944a2c77ce4758061a, type: 3}
   shockwavePos: {fileID: 1320863487189579250}
@@ -365,6 +366,12 @@ MonoBehaviour:
   criticalHealthSize: 0
   itemDrop: {fileID: 7810298314740993299, guid: 3a4ea76bf8e60404487a1a4e701f7560, type: 3}
   enemySprite: {fileID: 410940325015231102}
+  bossHealthSlider: {fileID: 0}
+  bossHealthBar: {fileID: 0}
+  fillImage: {fileID: 0}
+  normalBarlHealthColor: {r: 0, g: 1, b: 0.0731194, a: 1}
+  lowBarHealthColor: {r: 1, g: 0.8782677, b: 0, a: 1}
+  criticalBarHealthColor: {r: 1, g: 0, b: 0, a: 1}
   currentEnemyHealth: 0
   healingPickups: 0
 --- !u!50 &2901893347041949069

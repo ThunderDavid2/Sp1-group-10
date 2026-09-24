@@ -18,7 +18,9 @@ public class EnemyBossHealth : MonoBehaviour
     [SerializeField] private GameObject bossHealthBar; //
     [SerializeField] private Image fillImage; //
     [SerializeField] private Color normalBarlHealthColor, lowBarHealthColor, criticalBarHealthColor; //
+    [SerializeField] private AudioClip damagedSound;
     private Animator anim;
+    private AudioSource audioSource;
     private bool canTakeDamage = true;
     [SerializeField] private int currentEnemyHealth;
     [SerializeField] private int healingPickups;
@@ -30,6 +32,7 @@ public class EnemyBossHealth : MonoBehaviour
         currentEnemyHealth = startingHealth;
         bossHealthSlider.value = currentEnemyHealth; // 
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         
     }
     public void TakeDamage(int damage)
@@ -140,6 +143,7 @@ public class EnemyBossHealth : MonoBehaviour
         {
             if (other.transform.transform.position.y > transform.position.y + slimeHeight)
             {
+                audioSource.PlayOneShot(damagedSound);
                 TakeDamage(1);
                 GetComponent<EnemyBossMovement>().BossDamagedMovement(other.transform);
                 canTakeDamage = false;
