@@ -4,11 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class IntroSceneManager : MonoBehaviour
 {
-    [SerializeField] private int levelIndex;
+    [SerializeField] private int sceneIndex;
+    private bool skipped = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Invoke(nameof(LoadNextLevel), 75f);
+        Invoke(nameof(waitFunction), 75f);
     }
 
     // Update is called once per frame
@@ -16,15 +17,24 @@ public class IntroSceneManager : MonoBehaviour
     {
         
     }
-
+    private void waitFunction()
+    {
+        if (skipped == false)
+        {
+            LoadNextLevel();
+        }
+        
+    }
     private void LoadNextLevel()
     {
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void SkipIntro()
     {
-        SceneManager.LoadScene(levelIndex);   
+        skipped = true;
+        // Load the next level after
+        SceneManager.LoadScene(sceneIndex);   
     }
 
 }
