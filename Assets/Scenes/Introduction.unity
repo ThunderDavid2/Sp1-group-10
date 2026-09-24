@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: They tell us you're dead. That the chances of you surviving such a fall are...microscopic. I don't wanna believe them. It HURTS, in every  fibre of my being. Please return to us. We have tracked your ship...what remains of your ship to a planet inhabited with intelligent slimes. Maybe, maybe you can use their sticky bodies to repair the ship and escape, wouldn't that be nice. Sigh...I know I'm most likely speaking to a corpse, but I dream, every single night that you'll return to us and our family can be whole once more. Please return to us.
+  m_text: They tell us you're dead. That the chances of you surviving such a fall are...microscopic. I don't wanna believe them. It HURTS, in every fibre of my being. Please return to us. We have tracked your ship...what remains of your ship...to a planet inhabited with intelligent slimes. Maybe, maybe you can use their sticky bodies to repair the ship and escape, wouldn't that be nice. Sigh...I know I'm most likely speaking to a corpse, but I, I dream, every single night that you'll return to us and our family can be whole once more. Please return to us.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1354,7 +1354,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: bd02008170ace0803b4862d8b642a52a, type: 3}
+  m_Resource: {fileID: 8300000, guid: e8d9b7cbdc0c5939fa8ecc933b020c6b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
