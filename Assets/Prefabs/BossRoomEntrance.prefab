@@ -109,6 +109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossRoom
   bossRoomCanvas: {fileID: 0}
   blockExit: {fileID: 5553085211334357739}
+  activateBoss: {fileID: 0}
+  voiceActing: {fileID: 0}
 --- !u!50 &7772313995339761472
 Rigidbody2D:
   serializedVersion: 5
@@ -232,6 +234,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossRoom
   bossRoomCanvas: {fileID: 0}
   blockExit: {fileID: 5553085211334357739}
+  activateBoss: {fileID: 0}
+  voiceActing: {fileID: 8300000, guid: 7854621ec7d6e2942a02c1e7ed1aa259, type: 3}
 --- !u!82 &311075969955192815
 AudioSource:
   m_ObjectHideFlags: 0

@@ -372,6 +372,7 @@ MonoBehaviour:
   normalBarlHealthColor: {r: 0, g: 1, b: 0.0731194, a: 1}
   lowBarHealthColor: {r: 1, g: 0.8782677, b: 0, a: 1}
   criticalBarHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  damagedSound: {fileID: 8300000, guid: fcdd207bbb741d8468be4095cc68ee6f, type: 3}
   currentEnemyHealth: 0
   healingPickups: 0
 --- !u!50 &2901893347041949069
@@ -430,6 +431,7 @@ MonoBehaviour:
   bullet: {fileID: 7803517768336096875, guid: 6e47bf437d732f44c9522d706bc5046b, type: 3}
   bulletPos: {fileID: 6145327667537488253}
   fire: {fileID: 8300000, guid: 931e2adc322c8524b8c520866102a30f, type: 3}
+  chargingUp: {fileID: 0}
 --- !u!82 &5751809064109155326
 AudioSource:
   m_ObjectHideFlags: 0
