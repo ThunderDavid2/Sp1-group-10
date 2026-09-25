@@ -41,6 +41,10 @@ public class EnemyBossProjectiles : MonoBehaviour
             other.GetComponent<EnemyBossHealth>().Healing();
             Destroy(gameObject);
         }
+        if(other.gameObject.CompareTag("Player"))
+        {
+            other.GetComponent<PlayerDebuff>().SlimeEffect();
+        }
     }
-    
+
 }

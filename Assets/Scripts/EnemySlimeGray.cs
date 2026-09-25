@@ -13,9 +13,12 @@ public class EnemySlimeGray : MonoBehaviour
     [SerializeField] private float slimeHeight;
     [SerializeField] private GameObject slimeDrop;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private AudioClip deathSound, jumpSound;
     private SpriteRenderer rend;
     private Animator anim;
     private Rigidbody2D rgbd;
+
+    private AudioSource audioSource;
     private Transform target;
     private Vector2 moveDirection;
     private GameObject player;
@@ -29,6 +32,7 @@ public class EnemySlimeGray : MonoBehaviour
         anim = GetComponent<Animator>();
         rend = GetComponent<SpriteRenderer>();
         rgbd = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         target = GameObject.Find("Player").transform;
     }
@@ -87,6 +91,7 @@ public class EnemySlimeGray : MonoBehaviour
             Vector2 jumpDirection = (target.position - transform.position).normalized;
             rgbd.AddForce(new Vector2(jumpDirection.x, jumpForce), ForceMode2D.Impulse);
             anim.SetTrigger("Jump");
+            audioSource.PlayOneShot(jumpSound);
 
         } 
     }
@@ -124,6 +129,7 @@ public class EnemySlimeGray : MonoBehaviour
                 rgbd.linearVelocity = new Vector2(rgbd.linearVelocity.x, 0);
                 rgbd.AddForce(new Vector2(0, bounciness));
                 anim.SetTrigger("Death");
+                audioSource.PlayOneShot(deathSound);
                 GetComponent<EnemySlimeGray>().enabled = false;
                 damageGiven = 1;
                 Invoke(nameof(OnDeath), 1f);

@@ -13,9 +13,10 @@ public class EnemyBossMovement : MonoBehaviour
     [SerializeField] private int damageGiven = 1;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float slimeHeight;
+    [SerializeField] private GameObject bossHealthBar;
     [SerializeField] private GameObject shockwaveObjectRight, shockwaveObjectLeft;
     [SerializeField] private Transform shockwavePos;
-    [SerializeField] private ParticleSystem landParticleSystem;
+    [SerializeField] private ParticleSystem landParticleSystem, jumpParticleSystem;
     [SerializeField] private AudioClip landingSound, jumpSound;
     private SpriteRenderer rend;
     private Animator anim;
@@ -30,6 +31,8 @@ public class EnemyBossMovement : MonoBehaviour
     private int health;
     private float airTime;
     private bool hasJumped = false;
+    private bool bossDamagedMovement = false;
+    private float bossDirection = 0f;
     private AudioSource audioSource;
     private void Start()
     {
@@ -39,14 +42,28 @@ public class EnemyBossMovement : MonoBehaviour
         target = GameObject.Find("Player").transform;
         jumpTime = Random.Range(1, 10);
         audioSource = GetComponent<AudioSource>();
+        bossHealthBar.SetActive(false);
     }
     private void Update()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 1f, whatIsGround);
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, whatIsGround);
         distance = Vector2.Distance(transform.transform.position, target.transform.position);
-        if(distance < 40)
+        if(bossDamagedMovement)
         {
-            timer += Time.deltaTime; 
+            transform.Translate(new Vector2(bossDirection * (moveSpeed + 5), 0) * Time.deltaTime);
+            if(bossDirection < 0)
+            {
+                rend.flipX = true;
+            }
+            else
+            {
+                rend.flipX = false;
+            }
+        }
+        if (distance < 40 && !bossDamagedMovement)
+        {
+            timer += Time.deltaTime;
+            bossHealthBar.SetActive(true);
             if (target)
             {
                 Vector2 direction = (target.position - transform.position).normalized;
@@ -75,6 +92,10 @@ public class EnemyBossMovement : MonoBehaviour
                 airTime = 0;
             }
         }
+        if(distance > 40)
+        {
+            bossHealthBar.SetActive(false);
+        }
         moveSpeed = GetComponent<EnemyBossHealth>().GetBossMovementSpeed();
         health = GetComponent<EnemyBossHealth>().GetBossCurrentHealth();
         Shockwave();
@@ -82,8 +103,9 @@ public class EnemyBossMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (distance < 40 && isGrounded && timer > jumpTime)
+        if (distance < 40 && isGrounded && timer > jumpTime && !bossDamagedMovement)
         {
+            jumpParticleSystem.Play();
             anim.SetTrigger("Jump");
             audioSource.PlayOneShot(jumpSound);
             rgbd.AddForce(new Vector2(rgbd.linearVelocity.x, jumpForce), ForceMode2D.Impulse);
@@ -150,5 +172,14 @@ public class EnemyBossMovement : MonoBehaviour
                 rgbd.AddForce(new Vector2(0, bounciness));            }
         }
     }
-
+    public void BossDamagedMovement(Transform player)
+    {
+        bossDirection = transform.position.x < player.position.x ? -1f : 1f;
+        bossDamagedMovement = true;
+        Invoke(nameof(BossDamaged), 1.5f);
+    }
+    private void BossDamaged()
+    {
+        bossDamagedMovement = false;
+    }
 }

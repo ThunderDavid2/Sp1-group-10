@@ -3,6 +3,7 @@ using System.Xml;
 using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyBossHealth : MonoBehaviour
 {
@@ -13,7 +14,13 @@ public class EnemyBossHealth : MonoBehaviour
     [SerializeField] private float lowHealthSize, criticalHealthSize;
     [SerializeField] private GameObject itemDrop;
     [SerializeField] private SpriteRenderer enemySprite;
+    [SerializeField] private Slider bossHealthSlider; //
+    [SerializeField] private GameObject bossHealthBar; //
+    [SerializeField] private Image fillImage; //
+    [SerializeField] private Color normalBarlHealthColor, lowBarHealthColor, criticalBarHealthColor; //
+    [SerializeField] private AudioClip damagedSound;
     private Animator anim;
+    private AudioSource audioSource;
     private bool canTakeDamage = true;
     [SerializeField] private int currentEnemyHealth;
     [SerializeField] private int healingPickups;
@@ -23,18 +30,23 @@ public class EnemyBossHealth : MonoBehaviour
     private void Start()
     {
         currentEnemyHealth = startingHealth;
+        bossHealthSlider.value = currentEnemyHealth; // 
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        
     }
     public void TakeDamage(int damage)
     {
         currentEnemyHealth -= damage;
         anim.SetTrigger("Damage");
         UpdateBossHealthColor();
+        UpdateBossHealthBar();
         UpdateBossSize();
         GetComponent<BossDamagedProjectile>().SpawnProjectiles(5);
         //GetComponent<BossDamagedProjectile>().Damaged();
         if(currentEnemyHealth <= 0)
         {
+            bossHealthBar.SetActive(false);
             anim.SetTrigger("Death");
             GetComponent<EnemyBossMovement>().enabled = false;
             Invoke(nameof(Death), 1f);
@@ -44,6 +56,23 @@ public class EnemyBossHealth : MonoBehaviour
     private void CanTakeDamageAgain()
     {
         canTakeDamage = true;
+    }
+
+    private void UpdateBossHealthBar()
+    {
+        bossHealthSlider.value = currentEnemyHealth;
+        if (currentEnemyHealth <= 3)
+        {
+            fillImage.color = lowHealthColor;
+        }
+        else
+        {
+            fillImage.color = normalBarlHealthColor;
+        }
+        if(currentEnemyHealth == 1)
+        {
+            fillImage.color = criticalBarHealthColor;
+        }
     }
     private void UpdateBossSize()
     {
@@ -65,10 +94,11 @@ public class EnemyBossHealth : MonoBehaviour
     public void Healing()
     {
         healingPickups += 1;
-        if (healingPickups >= 5)
+        if (healingPickups >= 10)
         {
             currentEnemyHealth += 1;
             healingPickups = 0;
+            UpdateBossHealthBar();
             if(currentEnemyHealth == 4)
             {
                 transform.localScale += new Vector3(1, 1, 1);
@@ -113,7 +143,9 @@ public class EnemyBossHealth : MonoBehaviour
         {
             if (other.transform.transform.position.y > transform.position.y + slimeHeight)
             {
+                audioSource.PlayOneShot(damagedSound);
                 TakeDamage(1);
+                GetComponent<EnemyBossMovement>().BossDamagedMovement(other.transform);
                 canTakeDamage = false;
                 Invoke(nameof(CanTakeDamageAgain), 0.1f);
             }
