@@ -22295,6 +22295,7 @@ MonoBehaviour:
   finishedText: {fileID: 1362905061}
   unfinishedText: {fileID: 303692110}
   secretText: {fileID: 1043020232}
+  player: {fileID: 0}
   levelIndex: 4
 --- !u!61 &466395999
 BoxCollider2D:
