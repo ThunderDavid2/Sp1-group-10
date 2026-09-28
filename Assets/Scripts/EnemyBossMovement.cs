@@ -13,7 +13,6 @@ public class EnemyBossMovement : MonoBehaviour
     [SerializeField] private int damageGiven = 1;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float slimeHeight;
-    [SerializeField] private GameObject bossHealthBar;
     [SerializeField] private GameObject shockwaveObjectRight, shockwaveObjectLeft;
     [SerializeField] private Transform shockwavePos;
     [SerializeField] private ParticleSystem landParticleSystem, jumpParticleSystem;
@@ -42,7 +41,6 @@ public class EnemyBossMovement : MonoBehaviour
         target = GameObject.Find("Player").transform;
         jumpTime = Random.Range(1, 10);
         audioSource = GetComponent<AudioSource>();
-        bossHealthBar.SetActive(false);
     }
     private void Update()
     {
@@ -63,7 +61,6 @@ public class EnemyBossMovement : MonoBehaviour
         if (distance < 40 && !bossDamagedMovement)
         {
             timer += Time.deltaTime;
-            bossHealthBar.SetActive(true);
             if (target)
             {
                 Vector2 direction = (target.position - transform.position).normalized;
@@ -91,10 +88,6 @@ public class EnemyBossMovement : MonoBehaviour
             {
                 airTime = 0;
             }
-        }
-        if(distance > 40)
-        {
-            bossHealthBar.SetActive(false);
         }
         moveSpeed = GetComponent<EnemyBossHealth>().GetBossMovementSpeed();
         health = GetComponent<EnemyBossHealth>().GetBossCurrentHealth();

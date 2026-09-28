@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 5924290748938089435}
   - component: {fileID: 3706606922211685037}
   - component: {fileID: 1173501630272158970}
+  - component: {fileID: 5081779387306461252}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -215,7 +216,7 @@ MonoBehaviour:
   move: {fileID: -3273033918501402985, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   jump: {fileID: 517864120608272342, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   run: {fileID: 5751346749685452847, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
-  blink: {fileID: 0}
+  blink: {fileID: -8866190065069644900, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
   moveSpeed: 3
   jumpForce: 1000
   runSpeed: 6
@@ -431,6 +432,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestLogBookText
   displayText: {fileID: 0}
+--- !u!114 &5081779387306461252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210776784174638890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ba6c682d0486c4d9ef01d4ffd1e71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDebuff
+  slimeParticles: {fileID: 7884376453640656487, guid: 6755d3beb88f1d045b40a3a8cfd078bd, type: 3}
+  debuffImage: {fileID: 0}
 --- !u!1 &5830913626962881190
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +563,30 @@ PrefabInstance:
     - target: {fileID: 1366671367502034005, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220311429233108850, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220311429233108850, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.2509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220311429233108850, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.17254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220311429233108850, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.19215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220311429233108850, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.1137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7220311429233108850, guid: 4baa9c2dc9f1ec34f81619ed4611a372, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.10588236
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

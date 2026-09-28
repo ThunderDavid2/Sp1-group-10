@@ -55,7 +55,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthbar();
         //transform.position = spawnPosition.position;
         //GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     private void UpdateHealthbar()

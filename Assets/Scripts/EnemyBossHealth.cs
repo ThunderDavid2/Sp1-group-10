@@ -14,10 +14,6 @@ public class EnemyBossHealth : MonoBehaviour
     [SerializeField] private float lowHealthSize, criticalHealthSize;
     [SerializeField] private GameObject itemDrop;
     [SerializeField] private SpriteRenderer enemySprite;
-    [SerializeField] private Slider bossHealthSlider; //
-    [SerializeField] private GameObject bossHealthBar; //
-    [SerializeField] private Image fillImage; //
-    [SerializeField] private Color normalBarlHealthColor, lowBarHealthColor, criticalBarHealthColor; //
     [SerializeField] private AudioClip damagedSound;
     private Animator anim;
     private AudioSource audioSource;
@@ -30,7 +26,6 @@ public class EnemyBossHealth : MonoBehaviour
     private void Start()
     {
         currentEnemyHealth = startingHealth;
-        bossHealthSlider.value = currentEnemyHealth; // 
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         
@@ -40,13 +35,11 @@ public class EnemyBossHealth : MonoBehaviour
         currentEnemyHealth -= damage;
         anim.SetTrigger("Damage");
         UpdateBossHealthColor();
-        UpdateBossHealthBar();
         UpdateBossSize();
         GetComponent<BossDamagedProjectile>().SpawnProjectiles(5);
         //GetComponent<BossDamagedProjectile>().Damaged();
         if(currentEnemyHealth <= 0)
         {
-            bossHealthBar.SetActive(false);
             anim.SetTrigger("Death");
             GetComponent<EnemyBossMovement>().enabled = false;
             Invoke(nameof(Death), 1f);
@@ -58,22 +51,6 @@ public class EnemyBossHealth : MonoBehaviour
         canTakeDamage = true;
     }
 
-    private void UpdateBossHealthBar()
-    {
-        bossHealthSlider.value = currentEnemyHealth;
-        if (currentEnemyHealth <= 3)
-        {
-            fillImage.color = lowHealthColor;
-        }
-        else
-        {
-            fillImage.color = normalBarlHealthColor;
-        }
-        if(currentEnemyHealth == 1)
-        {
-            fillImage.color = criticalBarHealthColor;
-        }
-    }
     private void UpdateBossSize()
     {
         if(currentEnemyHealth == 3)
@@ -98,7 +75,6 @@ public class EnemyBossHealth : MonoBehaviour
         {
             currentEnemyHealth += 1;
             healingPickups = 0;
-            UpdateBossHealthBar();
             if(currentEnemyHealth == 4)
             {
                 transform.localScale += new Vector3(1, 1, 1);
