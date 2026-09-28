@@ -1,7 +1,4 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.AdaptivePerformance;
-using UnityEngine.UI;
 public class PlayerDebuff : MonoBehaviour
 {
     [SerializeField] private ParticleSystem slimeParticles;

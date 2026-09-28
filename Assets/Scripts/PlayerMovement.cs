@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class PlayerMovement : MonoBehaviour
 {

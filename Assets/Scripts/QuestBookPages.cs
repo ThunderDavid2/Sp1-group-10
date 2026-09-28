@@ -1,6 +1,4 @@
-
 using UnityEngine;
-using UnityEngine.VFX;
 public class QuestBookPages : MonoBehaviour
 {
     [SerializeField] private GameObject questBook;

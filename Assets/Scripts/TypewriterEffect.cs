@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.Rendering;
 using System.Collections;
 
 public class TypewriterEffect : MonoBehaviour

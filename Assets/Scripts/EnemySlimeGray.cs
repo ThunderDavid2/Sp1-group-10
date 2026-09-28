@@ -1,5 +1,3 @@
-using System.Runtime.Serialization;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class EnemySlimeGray : MonoBehaviour

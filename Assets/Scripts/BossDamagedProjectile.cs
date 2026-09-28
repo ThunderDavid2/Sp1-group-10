@@ -1,5 +1,3 @@
-using System.Data;
-using UnityEditor.Analytics;
 using UnityEngine;
 
 public class BossDamagedProjectile : MonoBehaviour

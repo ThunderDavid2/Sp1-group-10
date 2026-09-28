@@ -1,10 +1,4 @@
-using JetBrains.Annotations;
-using System.Data;
-using System.Xml.Schema;
-using Unity.VisualScripting;
-using Unity.XR.Oculus.Input;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class KeyFollow : MonoBehaviour
 {
