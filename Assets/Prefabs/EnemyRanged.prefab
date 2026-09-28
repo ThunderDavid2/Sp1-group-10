@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8eb98e2c7d2b64380b4b6660081733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySlimeBlue
-  moveSpeed: 1
+  moveSpeed: 0
   bounciness: 1000
   knockbackForce: 500
   upwardsForce: 500

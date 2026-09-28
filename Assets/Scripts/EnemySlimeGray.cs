@@ -69,6 +69,7 @@ public class EnemySlimeGray : MonoBehaviour
                     {
                         shouldJump = true;
                     }
+
                 }
             }
             if(moveDirection.x < 0f)
