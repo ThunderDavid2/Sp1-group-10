@@ -63502,6 +63502,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2304860471894518774, guid: e8188ab95603ff9448538bbab0a29d76, type: 3}
+      propertyPath: 'texts.Array.data[1]'
+      value: I was going... to rule the universe...
+      objectReference: {fileID: 0}
     - target: {fileID: 5787978046114945919, guid: e8188ab95603ff9448538bbab0a29d76, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
