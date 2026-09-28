@@ -29567,7 +29567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1701202937995071998, guid: 45df434561bf53949bd57570649df994, type: 3}
       propertyPath: m_text
-      value: Thank you Adventurer! With these Coins we can rebuild our village!
+      value: Good job! With this slime you will be able to repair your spacesuit!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701202937995071998, guid: 45df434561bf53949bd57570649df994, type: 3}
+      propertyPath: m_fontSize
+      value: 56.75
       objectReference: {fileID: 0}
     - target: {fileID: 3281921593860147553, guid: 45df434561bf53949bd57570649df994, type: 3}
       propertyPath: m_IsActive
