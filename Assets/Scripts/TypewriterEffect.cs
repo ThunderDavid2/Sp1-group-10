@@ -11,15 +11,15 @@ public class TypewriterEffect : MonoBehaviour
     private int currentTextIndex = 0;
     private int _currentVisableCharacterIndex;
     private Coroutine _typewriterCoroutine;
-    private WaitForSeconds _simpleDelay;
-    private WaitForSeconds _interpunctuationDelay;
+    private WaitForSecondsRealtime _simpleDelay;
+    private WaitForSecondsRealtime _interpunctuationDelay;
     [SerializeField] private float charactersPerSecond = 2;
     [SerializeField] private float interpunctuationDelay = 0.5f;
 
     private void Start()
     {
-        _simpleDelay = new WaitForSeconds(1 / charactersPerSecond);
-        _interpunctuationDelay = new WaitForSeconds(interpunctuationDelay);
+        _simpleDelay = new WaitForSecondsRealtime(1 / charactersPerSecond);
+        _interpunctuationDelay = new WaitForSecondsRealtime(interpunctuationDelay);
         SetText(texts[currentTextIndex]);
     }
 
@@ -62,7 +62,7 @@ public class TypewriterEffect : MonoBehaviour
 
             
         }
-        yield return new WaitForSeconds(delayBetweenTexts);
+        yield return new WaitForSecondsRealtime(delayBetweenTexts);
         
         currentTextIndex++;
         if (currentTextIndex < texts.Length)
