@@ -297302,7 +297302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1710880174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -331798,7 +331798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2098007312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -335936,11 +335936,11 @@ PrefabInstance:
       objectReference: {fileID: 1710880175}
     - target: {fileID: 852993416708054241, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 198.966
+      value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 852993416708054241, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.559
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 852993416708054241, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: m_LocalPosition.z
@@ -335998,6 +335998,30 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 957292641}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.13725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.1764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.039215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.227451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.34509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.043137256
+      objectReference: {fileID: 0}
     - target: {fileID: 3706606922211685037, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: questBookText
       value: 

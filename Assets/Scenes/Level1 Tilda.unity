@@ -143115,6 +143115,30 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 957292641}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.2509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.17254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.19215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.1137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338247538342329686, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.10588236
+      objectReference: {fileID: 0}
     - target: {fileID: 3706606922211685037, guid: d77828a176fb3984da4537db37f48485, type: 3}
       propertyPath: questBookText
       value: 
