@@ -13,6 +13,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(sceneIndex);
     }
     
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(2);
+    }
+    
     public void QuitToMainMenu()
     {
         SceneManager.LoadScene(0);

@@ -8,9 +8,8 @@ public class Killzone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(3);
-            // other.transform.position = spawnPosition.position;
-            //  other.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            SceneManager.LoadScene(4);
+        
         }
     }
 

@@ -22567,7 +22567,7 @@ MonoBehaviour:
   finishedText: {fileID: 1362905061}
   unfinishedText: {fileID: 303692110}
   secretText: {fileID: 1043020232}
-  player: {fileID: 0}
+  player: {fileID: 1514938464}
   levelIndex: 4
 --- !u!61 &466395999
 BoxCollider2D:
@@ -109878,6 +109878,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1514938464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2210776784174638890, guid: d77828a176fb3984da4537db37f48485, type: 3}
+  m_PrefabInstance: {fileID: 3635386270403669914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1515893519
 GameObject:
   m_ObjectHideFlags: 0
@@ -143118,6 +143123,10 @@ PrefabInstance:
       propertyPath: questBookPanel
       value: 
       objectReference: {fileID: 664164392}
+    - target: {fileID: 8377716017117506668, guid: d77828a176fb3984da4537db37f48485, type: 3}
+      propertyPath: blink
+      value: 
+      objectReference: {fileID: -8866190065069644900, guid: ef9ce34d064713145a129876d2ef25aa, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
